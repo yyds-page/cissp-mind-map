@@ -8,28 +8,28 @@ ps. Local browser version downloaded in release
 ## View
 
 - domain01. Security and Risk Management (Detail - Show 2 levels)
-![](pictures/domain01. Security and Risk Management.gif)
+![](pictures/domain01.%20Security%20and%20Risk%20Management.gif)
 
 - domain02. Asset Security (Detail - Show 2 levels)
-![](pictures/domain02. Asset Security.gif)
+![](pictures/domain02.%20Asset%20Security.gif)
 
 - domain03. Security Architecture and Engineering (Detail - Show 2 levels)
-![](pictures/domain03. Security Architecture and Engineering.gif)
+![](pictures/domain03.%20Security%20Architecture%20and%20Engineering.gif)
 
 - domain04. Communication and Network Security (Detail - Show 2 levels)
-![](pictures/domain04. Communication and Network Security.gif)
+![](pictures/domain04.%20Communication%20and%20Network%20Security.gif)
 
 - domain05. Identity and Access Management (Detail - Show 2 levels)
-![](pictures/domain05. Identity and Access Management.gif)
+![](pictures/domain05.%20Identity%20and%20Access%20Management.gif)
 
 - domain06. Security Assessment and Testing (Detail - Show 2 levels)
-![](pictures/domain06. Security Assessment and Testing.gif)
+![](pictures/domain06.%20Security%20Assessment%20and%20Testing.gif)
 
 - domain07. Security Operations (Detail - Show 2 levels)
-![](pictures/domain07. Security Operations.gif)
+![](pictures/domain07.%20Security%20Operations.gif)
 
 - domain08. Software Development Security (Detail - Show 2 levels)
-![](pictures/domain08. Software Development Security.gif)
+![](pictures/domain08.%20Software%20Development%20Security.gif)
 
 ## Notice
 
