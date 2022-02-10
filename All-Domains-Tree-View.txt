@@ -1,0 +1,3526 @@
+Domain 1. Security Management Practices
+  Fundamental Principles of Security
+    AIC triad
+      Availability
+        • Redundant array of independent disks (RAID)
+        • Clustering
+        • Load balancing
+        • Redundant data and power lines
+        • Software and data backups
+        • Disk shadowing
+        • Co-location and offsite facilities
+        • Rollback functions
+        • Failover configurations
+      Integrity
+        • Hashing (data integrity)
+        • Configuration management (system integrity)
+        • Change control (process integrity)
+        • Access control (physical and technical)
+        • Software digital signing
+        • Transmission cyclic redundancy check (CRC) functions
+      Confidentiality
+        • Encryption for data at rest (whole disk, database encryption)
+        • Encryption for data in transit (IPSec, TLS, PPTP, SSH, described in Chapter 4)
+        • Access control (physical and technical)
+  Security Definitions
+    vulnerability
+      is a weakness in a system that allows a threat source to compromise its security
+    threat
+      is any potential danger that is associated with the exploitation of a vulnerability
+    risk
+      is the likelihood of a threat source exploiting a vulnerability and the corresponding business impact
+    exposure
+      is an instance of being exposed to losses
+    “control,” “countermeasure,” and “safeguard”
+    threat agent
+    asset
+  Control Types
+    1
+      • Preventive
+        Locks
+        Badge system
+        Security guard
+        Biometric system
+        Mantrap doors
+        Security Police
+        Separation of duties
+        Information classification
+        Personnel procedures
+        Testing
+        Security awareness
+        ACLs
+        Encyption
+        Antivirus software
+        Smart cards
+        Dial-up call-back systems
+      • Detective
+        Motion detectores
+        Closed-circuit TVs
+        Monitoring and supervising
+        Job rotation
+        Investigations
+        Audit logs
+        IDS
+      • Corrective
+        Server Images
+      • Deterrent
+        Fences
+        Lighting
+      • Recovery
+        Offsite facility
+      • Compensating
+    2
+      • Administrative
+        • Policies and procedures
+        • Effective hiring practices
+        • Pre-employment background checks
+        • Controlled termination processes
+        • Data classification and labeling
+        • Security awareness
+      • Physical
+        • Badges, swipe cards
+        • Guards, dogs
+        • Fences, locks, mantraps
+      • Technical
+        • Passwords, biometrics, smart cards
+        • Encryption, secure protocols, call-back systems, database views, constrained user interfaces
+        • Antimalware software, access control lists, firewalls, intrusion prevention system
+  Security Frameworks
+    Security Program Development
+      • ISO/IEC 27000 series
+        International standards on how to develop and maintain an ISMS developed by ISO and IEC
+        list
+          • ISO/IEC 27000 Overview and vocabulary
+          • ISO/IEC 27001 ISMS requirements
+          • ISO/IEC 27002 Code of practice for information security controls
+          • ISO/IEC 27003 ISMS implementation
+          • ISO/IEC 27004 ISMS measurement
+          • ISO/IEC 27005 Risk management
+          • ISO/IEC 27006 Certification body requirements
+          • ISO/IEC 27007 ISMS auditing
+          • ISO/IEC 27008 Guidance for auditors
+          • ISO/IEC 27011 Telecommunications organizations
+          • ISO/IEC 27014 Information security governance
+          • ISO/IEC 27015 Financial sector
+          • ISO/IEC 27031 Business continuity
+          • ISO/IEC 27032 Cybersecurity
+          • ISO/IEC 27033 Network security
+          • ISO/IEC 27034 Application security
+          • ISO/IEC 27035 Incident management
+          • ISO/IEC 27037 Digital evidence collection and preservation
+          • ISO/IEC 27799 Health organizations
+    Enterprise Architecture Development
+      • Zachman Framework
+        Model for the development of enterprise architectures developed by John Zachman
+        two-dimensional model
+          six basic communication interrogatives (What, How, Where, Who, When, and Why)
+          perspectives (Executives, Business Managers, System Architects, Engineers, Technicians, and Enterprise-wide)
+      • TOGAF
+        Model and methodology for the development of enterprise architectures developed by The Open Group
+        Architecture Development Method (ADM)
+      Military-Oriented Architecture Frameworks
+        • MODAF
+          Architecture framework used mainly in military support missions developed by the British Ministry of Defence
+        • DoDAF
+          U.S. Department of Defense architecture framework that ensures interoperability of systems to meet military mission goals
+      Enterprise Security Architecture
+        • SABSA model
+          Model and methodology for the development of information security enterprise architectures
+          provides a life-cycle model so that the architecture can be constantly monitored and improved upon over time.
+        -
+          Strategic Alignment
+          Business Enablement
+          Process Enhancement
+          Security Effectiveness
+    Security Controls Development
+      • COBIT 5
+        by ISACA and ITGI(IT Governace Institute)
+        derived from the COSO
+        Control Objectives for Information and related Technology (COBIT)
+        five key principles
+          1. Meeting stakeholder needs
+          2. Covering the enterprise end to end
+          3. Applying a single integrated framework
+          4. Enabling a holistic approach
+          5. Separating governance from management
+      • NIST SP 800-53
+        by National Institute of Standards and Technology
+      • COSO Internal Control—Integrated Framework
+        by the Committee of Sponsoring Organizations (COSO) of the Treadway Commission
+        deal with fraudulent financial activities and reporting.
+        COSO IC deals more at the strategic level，while COBIT focuses more at the operational level
+        17 internal control principles
+          Control Environment
+            1. Demonstrates commitment to integrity and ethical values
+            2. Exercises oversight responsibilities
+            3. Establishes structure, authority, and responsibility
+            4. Demonstrates commitment to competence
+            5. Enforces accountability
+          Risk Assessment
+            6. Specifies suitable objectives
+            7. Identifies and analyzes risk
+            8. Assesses fraud risk
+            9. Identifies and analyzes significant change
+          Control Activities
+            10. Selects and develops control activities
+            11. Selects and develops general controls over technology
+            12. Deploys through policies and procedures
+          Information and Communication
+            13. Uses relevant, quality information
+            14. Communicates internally
+            15. Communicates externally
+          Monitoring Activities
+            16. Conducts ongoing and/or separate evaluations
+            17. Evaluates and communicates deficiencies
+    Process Management Development
+      • ITIL
+        by the Committee of Sponsoring Organizations (COSO) of the Treadway Commission
+        Information Technology Infrastructure Library
+        developed in the 1980s by the UK’s Central Computer and Telecommunications Agency
+        ITIL was created because of the increased dependence on information technology to meet business needs.
+      • Six Sigma
+        is a process improvement methodology
+        Its goal is to improve process quality by using statistical methods of measuring operation efficiency and reducing variation, defects, and waste
+        developed by Motorola with the goal of identifying and removing defects in its manufacturing processes.
+      • Capability Maturity Model Integration (CMMI)
+        by Carnegie Mellon University
+        Levels
+          Level 0
+            Nonexistent management
+              No process
+              No assessment
+          Level 1
+            Unpredictable Process
+              Ad hoc and disorganized
+              Reactive activities
+          Level 2
+            Repeatable process
+              Immature and developing
+              Security assigned to IT
+          Level 3
+            Defined Process
+              Documented and communicated
+              Defined procedures
+          Level 4
+            Managed process
+              Monitored and measured
+              Security and business objectives mapped
+          Level 5
+            Optimized process
+              Automated practices
+              Structured and enterprise-wide
+        Top-Down Approach
+          Management’s support is one of the most important pieces of a security program
+    Life cycle
+      1. Plan and organize
+        • Establish management commitment.
+        • Establish oversight steering committee.
+        • Assess business drivers.
+        • Develop a threat profile on the organization.
+        • Carry out a risk assessment.
+        • Develop security architectures at business, data, application, and infrastructure levels.
+        • Identify solutions per architecture level.
+        • Obtain management approval to move forward.
+      2. Implement
+        • Assign roles and responsibilities.
+        • Develop and implement security policies, procedures, standards, baselines, and guidelines.
+        • Identify sensitive data at rest and in transit.
+        • Implement the following blueprints:
+          • Asset identification and management
+          • Risk management
+          • Vulnerability management
+          • Compliance
+          • Identity management and access control
+          • Change control
+          • Software development life cycle
+          • Business continuity planning
+          • Awareness and training
+          • Physical security
+          • Incident response
+        • Implement solutions (administrative, technical, physical) per blueprint.
+        • Develop auditing and monitoring solutions per blueprint.
+        • Establish goals, SLAs, and metrics per blueprint.
+      3. Operate and maintain
+        • Follow procedures to ensure all baselines are met in each implemented blueprint.
+        • Carry out internal and external audits.
+        • Carry out tasks outlined per blueprint.
+        • Manage SLAs per blueprint.
+      4. Monitor and evaluate
+        • Review logs, audit results, collected metric values, and SLAs per blueprint.
+        • Assess goal accomplishments per blueprint.
+        • Carry out quarterly meetings with steering committees.
+        • Develop improvement steps and integrate into the Plan and Organize phase.
+  The Crux of Computer Crime Laws
+    • 18 USC 1029
+      Fraud and Related Activity in Connection with Access Devices
+    • 18 USC 1030
+      Fraud and Related Activity in Connection with Computers
+    • 18 USC 2510 et seq.
+      Wire and Electronic Communications Interception and Interception of Oral Communications
+    • 18 USC 2701 et seq.
+      Stored Wire and Electronic Communications and Transactional Records Access
+    • Digital Millennium Copyright Act
+    • Cyber Security Enhancement Act of 2002
+  Complexities in Cybercrime
+    Electronic Assets
+    The Evolution of Attacks
+      advanced persistent threat (APT)
+      Common Internet Crime Schemes
+        • Auction fraud
+        • Counterfeit cashier’s check
+        • Debt elimination
+        • Parcel courier e-mail scheme
+        • Employment/business opportunities
+        • Escrow services fraud
+        • Investment fraud
+        • Lotteries
+        • Nigerian letter, or “419”
+        • Ponzi/pyramid
+        • Reshipping
+        • Third-party receiver of funds
+    International Issues
+      Organisation for Economic Co-operation and Development (OECD) Guidelines
+        core principles
+          • Collection Limitation
+          • Data Quality Principle
+          • Purpose Specification Principle
+          • Use Limitation Principle
+          • Security Safeguards Principle
+          • Openness Principle
+          • Individual Participation Principle
+          • Accountability Principle
+      General Data Protection Regulation (GDPR) 2016
+        three relevant entities
+          • Data subject
+            The individual to whom the data pertains
+          • Data controller
+            Any organization that collects data on EU residents
+          • Data processor
+            Any organization that processes data for a data controller
+        privacy data
+          • Name
+          • Address
+          • ID numbers
+          • Web data (location, IP address, cookies)
+          • Health and genetic data
+          • Biometric data
+          • Racial or ethnic data
+          • Political opinions
+          • Sexual orientation
+        Role
+          Data Protection Officer (DPO)
+            not ultimately responsible
+        Key provisions of the GDPR
+          • Consent
+            Data controllers and data processors cannot use personal data without explicit consent of the data subjects.
+          • Right to be informed
+            Data controllers and data processors must inform data subjects about how their data is, will, or could be used.
+          • Right to restrict processing
+            Data subjects can agree to have their data stored by a collector but disallow it to be processed.
+          • Right to be forgotten
+            Data subjects can request that their personal data be permanently deleted.
+          • Data breaches
+            Data controllers must report a data breach within 72 hours of becoming aware of it.
+      Import/Export Legal Requirements
+        • Category 1 Special Materials and Related Equipment
+        • Category 2 Materials Processing
+        • Category 3 Electronics
+        • Category 4 Computers
+        • Category 5 Part 1: Telecommunications
+        • Category 5 Part 2: Information Security
+        • Category 6 Sensors and Lasers
+        • Category 7 Navigation and Avionics
+        • Category 8 Marine
+        • Category 9 Aerospace and Propulsion
+      Types of Legal Systems
+        Civil (Code) Law System
+          Civil law generally is derived from common law (case law)
+        Common Law System
+        Criminal
+          • Based on common law, statutory law, or a combination of both
+          • Addresses behavior that is considered harmful to society.
+        Civil/Tort
+          • Offshoot of criminal law.
+          • usually physical or financial.
+        Administrative (regulatory):
+        Customary Law System
+        Religious Law System
+        Mixed Law System
+  Intellectual Property Laws
+    Trade Secret
+      is something that is proprietary to a company and important for its survival and profitability.
+    Copyright
+    Trademark
+      is used to protect a word, name, symbol, sound, shape, color, or combination of these
+      World Intellectual Property Organization (WIPO)
+    Patent
+      is the strongest form of intellectual property protection.
+    Internal Protection of Intellectual Property
+    Software Piracy
+      End User License Agreement (EULA)
+      The Federation Against Software Theft (FAST)
+      Business Software Alliance
+      Digital Millennium Copyright Act (DMCA)
+        a U.S. copyright law that criminalizes the production and dissemination of technology, devices, or services
+      Copyright Directive
+        The European Union passed a similar law
+  Privacy
+    Personally identifiable information (PII)
+      Typical compenents
+        • Full name (if not common)
+        • National identification number
+        • IP address (in some cases)
+        • Vehicle registration plate number
+        • Driver’s license number
+        • Face, fingerprints, or handwriting
+        • Credit card numbers
+        • Digital identity
+        • Birthday
+        • Birthplace
+        • Genetic information
+      can fall into the PII
+        • First or last name, if common
+        • Country, state, or city of residence
+        • Age, especially if nonspecific
+        • Gender or race
+        • Name of the school they attend or workplace
+        • Grades, salary, or job position
+        • Criminal record
+    Law
+      Federal Privacy Act of 1974
+      Gramm-LeachBliley Act of 1999 (GLBA)
+        also known as the Financial Services Modernization Act of 1999
+        Financial Privacy Rule
+        Safeguards Rule
+        Pretexting Protection
+        include any organization that provides financial products or services to individuals
+      Health Insurance Portability and Accountability Act (HIPAA)
+        HIPAA mandates steep federal penalties for noncompliance
+      HITECH
+        Health Information Technology for Economic and Clinical Health (HITECH) Act
+        addresses the privacy and security concerns associated with the electronic transmission of health information
+      USA PATRIOT Act
+        expanded law enforcement powers
+      Canada’s Personal Information Protection
+        Personal Information Protection and Electronic Documents Act (PIPEDA)
+      Electronic Documents Act
+      New Zealand’s Privacy Act of 1993
+      Payment Card Industry Data Security Standard (PCI DSS)
+        Secure Sockets Layer (SSL) and early Transport Layer Security (TLS) are not considered secure.
+        control objectives
+          1. Install and maintain a firewall configuration to protect cardholder data.
+          2. Do not use vendor-supplied defaults for system passwords and other security parameters.
+          3. Protect stored cardholder data.
+          4. Encrypt transmission of cardholder data across open, public networks.
+          5. Use and regularly update anti-virus software or programs.
+          6. Develop and maintain secure systems and applications.
+          7. Restrict access to cardholder data by business need to know.
+          8. Assign a unique ID to each person with computer access.
+          9. Restrict physical access to cardholder data.
+          10. Track and monitor all access to network resources and cardholder data.
+          11. Regularly test security systems and processes.
+          12. Maintain a policy that addresses information security for employees and contractors.
+      Federal Information Security Management Act (FISMA) of 2002
+        • Inventory of information systems
+        • Categorize information and information systems according to risk level
+        • Security controls
+        • Risk assessment
+        • System security plan
+        • Certification and accreditation
+        • Continuous monitoring
+    Ways to Deal with Privacy
+      • Laws on government FPA, VA ISA, USA PATRIOT
+      • Laws on corporations HIPAA, HITECH, GLBA, PIDEDA
+      • Self-regulation PCI DSS
+      • Individual user Passwords, encryption, awareness
+  Data Breaches
+    U.S. Laws Pertaining to Data Breaches
+      Health Insurance Portability and Accountability Act
+      Health Information Technology for Economic and Clinical Health Act
+      Gramm-Leach-Bliley Act of 1999
+      Economic Espionage Act of 1996
+      State Laws
+    Other Nations’ Laws Pertaining to Data Breaches
+  Policies, Standards, Baselines, Guidelines, and Procedures
+    Level
+      • Strategic
+        • Security policy
+      • Tactical
+        • Mandatory standards
+        • Recommended guidelines
+        • Detailed procedures
+    Security Policy
+      is an overall general statement produced by senior management
+      The policy provides the foundation
+      Types of Policies
+        • Regulatory
+        • Advisory
+        • Informative
+      outlined
+        issue-specific policies
+        system-specific policy
+      a common hierarchy of security policies
+        • Organizational policy
+          • Acceptable use policy
+          • Risk management policy
+          • Vulnerability management policy
+          • Data protection policy
+          • Access control policy
+          • Business continuity policy
+          • Log aggregation and auditing policy
+          • Personnel security policy
+          • Physical security policy
+          • Secure application development policy
+          • Change control policy
+          • E-mail policy
+          • Incident response policy
+    Standards
+      Standards refer to mandatory activities, actions, or rules.
+      eg. ISO/IEC 27000 series
+    Baselines
+      refers to a point in time that is used as a comparison for future changes
+      eg. Evaluation Assurance Level (EAL) 4 baseline
+    Guidelines
+      are recommended actions and operational guides to users, IT staff, operations staff, and others
+    Procedures
+      are detailed step-by-step tasks that should be performed to achieve a certain goal
+    Implementation
+      support them shows DUE CARE
+  Risk Management
+    Concept
+      RM is the process of identifying and assessing risk, reducing it to an acceptable level, and ensuring it remains at that level
+    the major categories
+      • Physical damage: Fire, water, vandalism, power loss, and natural disasters
+      • Human interaction: Accidental or intentional action or inaction that can disrupt productivity
+      • Equipment malfunction: Failure of systems and peripheral devices
+      • Inside and outside attacks:  Hacking, cracking, and attacking
+      • Misuse of data:  Sharing trade secrets, fraud, espionage, and theft
+      • Loss of data:  Intentional or unintentional loss of information to unauthorized receivers
+      • Application error:  Computation errors, input errors, and buffer overflows
+    Holistic Risk Management
+      NIST SP 800-39 defines
+        • Organizational tier
+        • Business process tier
+        • Information systems tier
+    Information Systems Risk Management Policy
+      ISRM policy should address
+        • The objectives of the ISRM team
+        • The level of risk the organization will accept and what is considered an acceptable level of risk
+        • Formal processes of risk identification
+        • The connection between the ISRM policy and the organization’s strategic planning processes
+        • Responsibilities that fall under ISRM and the roles to fulfill them
+        • The mapping of risk to internal controls
+        • The approach toward changing staff behaviors and resource allocation in response to risk analysis
+        • The mapping of risks to performance targets and budgets
+        • Key indicators to monitor the effectiveness of controls
+      The Risk Management Team
+        • An established risk acceptance level provided by senior management
+        • Documented risk assessment processes and procedures
+        • Procedures for identifying and mitigating risks
+        • Appropriate resource and fund allocation from senior management
+        • Security awareness training for all staff members associated with information assets
+        • The ability to establish improvement (or risk mitigation) teams in specific areas when necessary
+        • The mapping of legal and regulation compliancy requirements to control and implement requirements
+        • The development of metrics and performance indicators so as to measure and manage various types of risks
+        • The ability to identify and assess new risks as the environment and company change
+        • The integration of ISRM and the organization’s change control process to ensure that changes do not introduce new vulnerabilities
+      The Risk Management Process
+        • Frame risk
+        • Assess risk
+        • Respond to risk
+        • Monitor risk
+  Threat Modeling
+    Threat Modeling Concepts
+      Vulnerabilities
+        Information
+          • Data at rest
+          • Data in motion
+          • Data in use
+        Processes
+        People
+          • Social engineering
+          • Social networks
+          • Passwords
+      Threats
+        potential cause of an unwanted incident, which may result in harm to a system or organization
+    Threat Modeling Methodologies
+      Attack Trees
+        “attack chain”
+        “kill chain”
+      Reduction Analysis
+        controls or countermeasures
+  Risk Assessment and Analysis
+    four main goals
+      • Identify assets and their value to the organization.
+      • Determine the likelihood that a threat exploits a vulnerability.
+      • Determine the business impact of these potential threats.
+      • Provide an economic balance between the impact of the threat and the cost of the countermeasure.
+    Risk Assessment Team
+    The Value of Information and Assets
+    Costs That Make Up the Value
+      assigning values to assets
+        • Cost to acquire or develop the asset
+        • Cost to maintain and protect the asset
+        • Value of the asset to owners and users
+        • Value of the asset to adversaries
+        • Price others are willing to pay for the asset
+        • Cost to replace the asset if lost
+        • Operational and production activities affected if the asset is unavailable
+        • Liability issues if the asset is compromised
+        • Usefulness and role of the asset in the organization
+      reasons
+        • To perform effective cost/benefit analyses
+        • To select specific countermeasures and safeguards
+        • To determine the level of insurance coverage to purchase
+        • To understand what exactly is at risk
+        • To comply with legal and regulatory requirements
+    Identifying Vulnerabilities and Threats
+    Methodologies for Risk Assessment
+      NIST SP 800-30, Revision 1.
+        1. Prepare for the assessment.
+        2. Conduct the assessment:
+          a. Identify threat sources and events.
+          b. Identify vulnerabilities and predisposing conditions.
+          c. Determine likelihood of occurrence.
+          d. Determine magnitude of impact.
+          e. Determine risk.
+        3. Communicate results.
+        4. Maintain assessment.
+      Facilitated Risk Analysis Process(FRAP)
+        qualitative methodology
+        FRAP is intended to be used to analyze one system, application, or business process at a time
+      OCTAVE (Operationally Critical Threat, Asset, and Vulnerability Evaluation)
+        OCTAVE would be used to assess all systems, applications, and business processes within the organization.
+      AS/NZS ISO 31000
+        takes a much broader approach to risk management
+        Australian and New Zealand methodology
+      ISO/IEC 27000 Series
+        ISO/IEC 27005
+      Failure Modes and Effect Analysis (FMEA)
+        FMEA is commonly used in product development and operational environments.
+        The goal is to identify where something is most likely going to break and either fix the flaws
+        steps
+          1. Start with a block diagram of a system or control.
+          2. Consider what happens if each block of the diagram fails.
+          3. Draw up a table in which failures are paired with their effects and an evaluation of the effects.
+          4. Correct the design of the system, and adjust the table until the system is not known to have unacceptable problems.
+          5. Have several engineers review the Failure Modes and Effect Analysis.
+      fault tree analysis
+        • False alarms
+        • Insufficient error handling
+        • Sequencing or order
+        • Incorrect timing outputs
+        • Valid but not expected outputs
+      CRAMM(Central Computing and Telecommunications Agency Risk Analysis and Management Method)
+        was created by the United Kingdom
+        three distinct stages
+          define objectives,
+          assess risks
+          identify countermeasures
+      Choose methodology
+        deploy an organization-wide risk management
+          ISO/IEC 27005 or OCTAVE
+        focus just on IT security risks during your assessment
+          NIST SP 800-30
+        have a limited budget and need to carry out a focused assessment on an individual system or process
+          Facilitated Risk Analysis Process
+        dig into the details of how a security flaw within a specific system could cause negative ramifications
+          Failure Modes and Effect Analysis or fault tree analysis
+        to understand your company’s business risks
+          AS/NZS ISO 31000
+    Risk Analysis Approaches
+      Automated Risk Analysis Methods
+      Steps of a Quantitative Risk Analysis
+        Asset Value × Exposure Factor (EF) = SLE
+        SLE × Annualized Rate of Occurrence (ARO) = ALE
+      Results of a Quantitative Risk Analysis
+        • Monetary values assigned to assets
+        • Comprehensive list of all significant threats
+        • Probability of the occurrence rate of each threat
+        • Loss potential the company can endure per threat in a 12-month time span
+        • Recommended controls
+    Qualitative Risk Analysis
+      qualitative methods walk through different scenarios of risk possibilities and rank the seriousness of the threats and the validity of the different possible countermeasures based on opinions
+      The Delphi Technique
+        a group decision method
+    Protection Mechanisms
+      Control Selection
+        a cost/benefit analysis.
+          (ALE before implementing safeguard) – (ALE after implementing safeguard) – (annual cost of safeguard) = value of safeguard to the company
+        Security Control Assessment
+    Total Risk vs. Residual Risk
+      threats × vulnerability × asset value = total risk
+      total risk (threats × vulnerability × asset value) × controls gap = residual risk
+      total risk – countermeasures = residual risk
+    Handling Risk
+  Supply Chain Risk Management
+    NIST SP 800-161
+      “Supply Chain Risk Management Practices for Federal Information Systems and Organizations.”
+    Upstream and Downstream Suppliers
+      Hardware
+      Software
+      Services
+        reduce its risk when it comes to outsourcing
+          • Review the service provider’s security program
+          • Conduct onsite inspection and interviews
+          • Review contracts to ensure security and protection levels are agreed upon
+          • Ensure service level agreements are in place
+          • Review internal and external audit reports and third-party reviews
+          • Review references and communicate with former and existing customers
+          • Review Better Business Bureau reports
+          • Ensure the service provider has a business continuity plan (BCP) in place
+          • Implement a nondisclosure agreement (NDA)
+          • Understand the provider’s legal and regulatory requirements
+        Service Level Agreements
+          (SLA) is a contractual agreement that states that a service provider guarantees a certain level of service.
+  Risk Management Frameworks
+    Commonly Accepted Risk Management Frameworks
+      • NIST RMF (SP 800-37r1)
+        It takes a systems life-cycle approach to risk management and focuses on certification and accreditation of information systems
+        six-step process of applying the RMF
+          1. Categorize information system.
+          2. Select security controls.
+          3. Implement security controls.
+          4. Assess security controls.
+          5. Authorize information system.
+          6. Monitor security controls.
+      • ISO 31000:2018
+        this framework is not focused on information systems, but can be applied more broadly to an organization.
+      • ISACA Risk IT
+        it is very well integrated with COBIT
+  Business Continuity and Disaster Recovery
+    Concepts
+      disaster recovery plan (DRP)
+      business continuity plan (BCP)
+        • Provide an immediate and appropriate response to emergency situations
+        • Protect lives and ensure safety
+        • Reduce business impact
+        • Resume critical business functions
+        • Work with outside vendors and partners during the recovery period
+        • Reduce confusion during a crisis
+        • Ensure survivability of the business
+      business continuity management (BCM)
+        is the holistic management process that should cover both of them.
+    Standards and Best Practices
+      NIST SP 800-34, Revision 1, “Contingency Planning Guide for Federal Information Systems”
+        1. Develop the continuity planning policy statement.
+        2. Conduct the business impact analysis (BIA)
+        3. Identify preventive controls.
+        4. Create contingency strategies.
+        5. Develop an information system contingency plan.
+        6. Ensure plan testing, training, and exercises.
+        7. Ensure plan maintenance.
+      standards-based
+        ISO/IEC 27031:2011
+        ISO 22301:2012
+          This standard replaced BS 25999-2.
+        Business Continuity Institute’s Good Practice Guidelines (GPG)
+          Management Practices:
+          Technical Practices:
+        DRI International Institute’s Professional Practices for Business Continuity Planners
+          • Program Initiation and Management
+          • Risk Evaluation and Control
+          • Business Impact Analysis
+          • Business Continuity Strategies
+          • Emergency Response and Operations
+          • Plan Implementation and Documentation
+          • Awareness and Training Programs
+          • Business Continuity Plan Exercise, Audit, and Maintenance
+          • Crisis Communications
+          • Coordination with External Agencies
+    Making BCM Part of the Enterprise Security Program
+    BCP Project Components
+      BCP committee
+        • Business units
+        • Senior management
+        • IT department
+        • Security department
+        • Communications department
+        • Legal department
+      The initiation process for the BCP program
+        • Setting up a budget and staff for the program before the BCP process begins.
+        • Assigning duties and responsibilities to the BCP coordinator and to representatives from all of the functional units of the organization.
+        • Senior management kick-off of the BCP program with a formal announcement or, better still, an organization-wide meeting to demonstrate high-level support.
+        • Awareness-raising activities to let employees know about the BCP program and to build internal support for it.
+        • Establishment of skills training for the support of the BCP effort.
+        • The start of data collection from throughout the organization to aid in crafting various continuity options.
+        • Putting into effect “quick wins” and gathering of “low-hanging fruit” to show tangible evidence of improvement in the organization’s readiness, as well as improving readiness.
+      Scope of the Project
+        Enterprise-wide BCP
+      BCP Policy
+        The process of drawing up a policy
+          1. Identify and document the components of the policy.
+          2. Identify and define policies of the organization that the BCP might affect.
+          3. Identify pertinent legislation, laws, regulations, and standards.
+          4. Identify “good industry practice” guidelines by consulting with industry experts.
+          5. Perform a gap analysis. Find out where the organization currently is in terms of continuity planning, and spell out where it wants to be at the end of the BCP process.
+          6. Compose a draft of the new policy.
+          7. Have different departments within the organization review the draft.
+          8. Incorporate the feedback from the departments into a revised draft.
+          9. Get the approval of top management on the new policy.
+          10. Publish a final draft, and distribute and publicize it throughout the organization.
+      Project Management
+        SWOT analysis
+          • Strengths Characteristics of the project team that give it an advantage over others
+          • Weaknesses Characteristics that place the team at a disadvantage relative to others
+          • Opportunities Elements that could contribute to the project’s success
+          • Threats Elements that could contribute to the project’s failure
+        components
+          • Objective-to-task mapping
+          • Resource-to-task mapping
+          • Workflows
+          • Milestones
+          • Deliverables
+          • Budget estimates
+          • Success factors
+          • Deadlines
+      Business Continuity Planning Requirements
+        Tips
+          Due diligence is normally associated with leaders, laws, and regulations
+          Due care is normally applicable to everyone and could be used to show negligence.
+        Business Impact Analysis (BIA)
+          • Maximum tolerable downtime and disruption for activities
+          • Operational disruption and productivity
+          • Financial considerations
+          • Regulatory responsibilities
+          • Reputation
+        Risk Assessment
+          Risk assessment process
+        Risk Assessment Evaluation and Process
+          The end goals of a risk assessment
+            • Identifying and documenting single points of failure
+            • Making a prioritized list of threats to the particular business processes of the organization
+            • Putting together information for developing a management strategy for risk control and for developing action plans for addressing risks
+            • Documenting acceptance of identified risks, or documenting acknowledgment of risks that will not be addressed
+          Risk = Threat × Impact × Probability.
+          The main parts of a risk assessment
+            • Review the existing strategies for risk management
+            • Construct a numerical scoring system for probabilities and impacts
+            • Make use of a numerical score to gauge the effect of the threat
+            • Estimate the probability of each threat
+            • Weigh each threat through the scoring system
+            • Calculate the risk by combining the scores of likelihood and impact of each threat
+            • Get the organization’s sponsor to sign off on these risk priorities
+            • Weigh appropriate measures
+            • Make sure that planned measures that alleviate risk do not heighten other risks
+            • Present the assessment’s findings to executive management
+          BIA Steps
+            1. Select individuals to interview for data gathering.
+            2. Create data-gathering techniques (surveys, questionnaires, qualitative and quantitative approaches).
+            3. Identify the company’s critical business functions.
+            4. Identify the resources these functions depend upon.
+            5. Calculate how long these functions can survive without these resources.
+            6. Identify vulnerabilities and threats to these functions.
+            7. Calculate the risk for each different business function.
+            8. Document findings and report them to management.
+          Assigning Values to Assets
+            Loss criteria
+              • Loss in reputation and public confidence
+              • Loss of competitive advantages
+              • Increase in operational expenses
+              • Violations of contract agreements
+              • Violations of legal and regulatory requirements
+              • Delayed-income costs
+              • Loss in revenue
+              • Loss in productivity
+            maximum tolerable downtime (MTD) or maximum period time of disruption (MPTD)
+          EXAM TIP
+            A BIA is performed at the beginning of business continuity planning to identify the areas that would suffer the greatest financial or operational loss in the event of a disaster or disruption. It identifies the company’s critical systems needed for survival and estimates the outage time that can be tolerated by the company as a result of a disaster or disruption.
+          Interdependencies
+            management’s responsibilities
+              • Committing fully to the BCP
+              • Setting policy and goals
+              • Making available the necessary funds and resources
+              • Taking responsibility for the outcome of the development of the BCP
+              • Appointing a team for the process
+            BCP team’s responsibilities
+              • Identifying regulatory and legal requirements that must be met
+              • Identifying all possible vulnerabilities and threats
+              • Estimating the possibilities of these threats and the loss potential
+              • Performing a BIA
+              • Outlining which departments, systems, and processes must be up and running before any others
+              • Identifying interdependencies among departments and processes
+              • Developing procedures and steps in resuming business after a disaster
+  Personnel Security
+    minimize the risks by implementing preventive measures
+      Separation of duties
+        makes sure that one individual cannot complete a critical task by herself.
+        split knowledge and dual control.
+      Rotation of duties (rotation of assignments)
+        an administrative detective control that can be put into place to uncover fraudulent activities
+      mandatory vacation
+        usually detect any fraudulent errors or activities
+    Hiring Practices
+      Possible background check criteria
+        • A Social Security number trace
+        • A county/state criminal check
+        • A federal criminal check
+        • A sexual offender registry check
+        • Employment verification
+        • Education verification
+        • Professional reference verification
+        • An immigration check
+        • Professional license/certification verification
+        • Credit report
+        • Drug screening
+    Onboarding
+      Steps
+        • The new employee attends all required security awareness training.
+        • The new employee must read all security policies, be given an opportunity to have any questions about the policies answered, and sign a statement indicating they understand and will comply with the policies.
+        • The new employee is issued all appropriate identification badges, keys, and access tokens pursuant to their assigned roles.
+        • The IT department creates all necessary accounts for the new employee, who signs into the systems and sets their passwords (or changes any temporary passwords).
+      Nondisclosure agreements (NDAs) must be developed and signed by new employees
+    Termination
+      • The employee must leave the facility immediately under the supervision of a manager or security guard.
+      • The employee must surrender any identification badges or keys, be asked to complete an exit interview, and return company supplies.
+      • That user’s accounts and passwords should be disabled or changed immediately.
+    Security Awareness Training
+      Presenting the Training
+      Periodic Content Reviews
+      Training Assessments
+  Security Governance
+    Metrics
+      industry best practices
+        ISO/IEC 27004:2016
+        ISO/IEC 27001
+        ISO/IEC 27004
+        NIST SP 800-55, Revision 1
+        Six Sigma
+        the measurements of service-level targets for ITIL
+  Ethics
+    the Code of Ethics
+      • Protect society, the common good, necessary public trust and confidence, and the infrastructure
+      • Act honorably, honestly, justly, responsibly, and legally
+      • Provide diligent and competent service to principals
+      • Advance and protect the profession
+    The Computer Ethics Institute
+      Ten Commandments of Computer Ethics
+        1. Thou shalt not use a computer to harm other people.
+        2. Thou shalt not interfere with other people’s computer work.
+        3. Thou shalt not snoop around in other people’s computer files.
+        4. Thou shalt not use a computer to steal.
+        5. Thou shalt not use a computer to bear false witness.
+        6. Thou shalt not copy or use proprietary software for which you have not paid.
+        7. Thou shalt not use other people’s computer resources without authorization or proper compensation.
+        8. Thou shalt not appropriate other people’s intellectual output.
+        9. Thou shalt think about the social consequences of the program you are writing or the system you are designing.
+        10. Thou shalt always use a computer in ways that ensure consideration and respect for your fellow humans.
+    The Internet Architecture Board
+      It is responsible for the architectural oversight of the Internet Engineering Task Force (IETF) activities, Internet Standards Process oversight and appeal, and editor of Requests for Comments (RFCs).
+      unethical and unacceptable behavior
+        • Purposely seeking to gain unauthorized access to Internet resources
+        • Disrupting the intended use of the Internet
+        • Wasting resources (people, capacity, and computers) through purposeful actions
+        • Destroying the integrity of computer-based information
+        • Compromising the privacy of others
+        • Conducting Internet-wide experiments in a negligent manner
+      RFC 1087 is called “Ethics and the Internet.”
+Domain 2. Asset Security
+  Information Life Cycle
+    1. Acquisition
+    2. Use
+    3. Archival
+      Backup
+        A data backup is a copy of a data set currently in use that is made for the purpose of recovering from the loss of the original data.
+      Archive
+        A data archive is a copy of a data set that is no longer in use, but is kept in case it is needed at some future point
+    4. Disposal
+  Classification
+    EXAM TIP
+      Each classification level should have its own handling and destruction requirements.
+      An information asset can be either the data, the device on which it is stored and used, or both
+    Classifications Levels
+      commercial business
+        • Confidential
+        • Private
+        • Sensitive
+        • Public
+      military purposes
+        • Top secret
+        • Secret
+        • Confidential
+        • Sensitive but unclassified
+        • Unclassified
+      criteria parameters for determine the sensitivity of data
+        • The usefulness of data
+        • The value of data
+        • The age of data
+        • The level of damage that could be caused if the data were disclosed
+        • The level of damage that could be caused if the data were modified or corrupted
+        • Legal, regulatory, or contractual responsibility to protect the data
+        • Effects the data has on security
+        • Who should be able to access the data
+        • Who should maintain the data
+        • Who should be able to reproduce the data
+        • Lost opportunity costs that could be incurred if the data were not available or were corrupted
+    Classification Controls
+      Classification Procedures
+        1. Define classification levels.
+        2. Specify the criteria that will determine how data is classified.
+        3. Identify data owners who will be responsible for classifying data.
+        4. Identify the data custodian who will be responsible for maintaining data and its security level.
+        5. Indicate the security controls, or protection mechanisms, required for each classification level.
+        6. Document any exceptions to the previous classification issues.
+        7. Indicate the methods that can be used to transfer custody of the information to a different data owner.
+        8. Create a procedure to periodically review the classification and ownership.
+        Communicate any changes to the data custodian.
+        9. Indicate procedures for declassifying the data.
+        10. Integrate these issues into the security awareness program so all employees understand how to handle data at different classification levels.
+  Layers of Responsibility
+    EXAM TIP
+      Senior management always carries the ultimate responsibility for the organization.
+    Executive Management
+      Chief Executive Officer
+        has the day-to-day management responsibilities of an organization.
+        The CEO can delegate tasks, but not necessarily responsibility.
+      Chief Financial Officer
+      chief information officer (CIO)
+        The CIO sets the stage for the protection of company assets and is ultimately responsible for the success of the company security program.
+      chief privacy officer (CPO)
+      chief security officer (CSO)
+        is responsible for understanding the risks that the company faces and for mitigating these risks to an acceptable level.
+        CISO
+    Data Owner
+      Data ownership takes on a different meaning when outsourcing data storage requirements.
+    Data Custodian
+      is responsible for maintaining and protecting the data.
+    System Owner
+      is responsible for one or more systems
+    Security Administrator
+      is responsible for implementing and maintaining specific security network devices and software in the enterprise
+    Supervisor(user manager)
+      is ultimately responsible for all user activity and any assets created and owned by these users
+    Change Control Analyst
+      is responsible for approving or rejecting requests to make changes to the network, systems, or software.
+    Data Analyst
+      is responsible for ensuring that data is stored in a way that makes the most sense to the company and the individuals who need to access and work with it.
+    User
+      is any individual who routinely uses the data for work-related tasks
+    Auditor
+      is to periodically check that everyone is doing what they are supposed to be doing and to ensure the correct controls are in place and are being maintained securely.
+  Retention Policies
+    Developing a Retention Policy
+      • What data do we keep?
+      • How long do we keep this data?
+      • Where do we keep this data?
+    How We Retain
+      • Taxonomy
+        A taxonomy is a scheme for classifying data. This classification can be made using a variety of categories,
+      • Classification
+      • Normalization
+      • Indexing
+    How Long We Retain
+    What Data We Retain
+      e-Discovery
+        Discovery of electronically stored information (ESI), or e-discovery,
+        Electronic Discovery Reference Model (EDRM)
+          1. Identification of data required under the order.
+          2. Preservation of this data to ensure it is not accidentally or routinely destroyed while complying with the order.
+          3. Collection of the data from the various stores in which it may be.
+          4. Processing to ensure the correct format is used for both the data and its metadata.
+          5. Review of the data to ensure it is relevant.
+          6. Analysis of the data for proper context.
+          7. Production of the final data set to those requesting it.
+          8. Presentation of the data to external audiences to prove or disprove a claim.
+  Protecting Privacy
+    Data Owners
+    Data Processers
+    Data Remanence
+      Erasing
+        delete operation against a file
+        The actual data remains on the drive
+      Clearing/Overwriting
+        Overwriting data entails replacing the 1’s and 0’s that represent it on storage media with random or fixed patterns of 1’s and 0’s
+      Purging
+        repeat the clearing process multiple times
+      Degaussing
+        Use a strong magnetic field
+      Sanitization
+        for declassification
+      Destruction
+        Final stage in the lifecycle of media
+      Declassification
+      Encryption
+    Limits on Collection
+  Protecting Assets
+    Data Security Controls
+      NIST Special Publication 800-111, “Guide to Storage Encryption Technologies for End User Devices,”
+      Data at Rest
+        The solution to protecting data in such scenarios is as simple as it is ubiquitous: encryption.
+      Data in Motion
+        TLS
+        VPNs
+        man-in-the-middle (MitM) attack
+      Data in Use
+        side-channel attacks
+        loopholes
+          Heartbleed
+          Meltdown
+          Spectre
+          BranchScope
+    Media Controls
+      Media should be clearly marked and logged, its integrity should be verified, and it should be properly erased of data when no longer needed.
+      Clearing is acceptable when media will be reused in the same physical environment for the same purposes
+      Dumpster diving
+        is the practice of searching through trash at homes and businesses to find valuable information
+      Media management
+        • Tracking (audit logging)
+        • Effectively implementing access controls
+        • Tracking the number and location of backup versions
+        • Documenting the history of changes to media.
+        • Ensuring environmental conditions do not endanger media.
+        • Ensuring media integrity
+        • Inventorying the media on a scheduled basis
+        • Carrying out secure disposal activities.
+        • Internal and external labeling
+          • Date created
+          • Retention period
+          • Classification level
+          • Who created it
+          • Date to be destroyed
+          • Name and version
+      Protecting Mobile Devices
+        • Inventory all mobile devices, including serial numbers, so they can be properly identified if they are stolen and then recovered.
+        • Harden the operating system by applying baseline secure configurations.
+        • Password-protect the BIOS on laptops.
+        • Register all devices with their respective vendors, and file a report with the vendor when a device is stolen.
+        • Do not check mobile devices as luggage when flying. Always carry them on with you.
+        • Never leave a mobile device unattended, and carry it in a nondescript carrying case.
+        • Engrave the device with a symbol or number for proper identification.
+        • Use a slot lock with a cable to connect a laptop to a stationary object whenever possible.
+        • Back up all data on mobile devices to an organizationally controlled repository.
+        • Encrypt all data on a mobile device.
+        • Enable remote wiping of data on the device.
+      Paper Records
+        • Educate your staff on proper handling of paper records.
+        • Minimize the use of paper records.
+        • Ensure workspaces are kept tidy so it is easy to tell when sensitive papers are left exposed, and routinely audit workspaces to ensure sensitive documents are not exposed.
+        • Lock away all sensitive paperwork as soon as you are done with it.
+        • Prohibit taking sensitive paperwork home.
+        • Label all paperwork with its classification level. Ideally, also include its owner’s name and disposition (e.g., retention) instructions.
+        • Conduct random searches of employees’ bags as they leave the office to ensure sensitive materials are not being taken home.
+        • Destroy unneeded sensitive papers using a crosscut shredder. For very sensitive papers, consider burning them instead.
+      Safes
+        • Wall safe Embedded into the wall and easily hidden
+        • Floor safe Embedded into the floor and easily hidden
+        • Chests Stand-alone safes
+        • Depositories Safes with slots, which allow the valuables to be easily slipped in
+        • Vaults Safes that are large enough to provide walk-in access
+  Data Leakage
+    The costs commonly include
+      • Investigating the incident and remediating the problem
+      • Contacting affected individuals to inform them about the incident
+      • Penalties and fines to regulatory agencies
+      • Contractual liabilities
+      • Mitigating expenses (such as free credit monitoring services for affected individuals)
+      • Direct damages to affected individuals
+    Data Leak Prevention(DLP)
+      General Approaches to DLP
+        Data Inventories
+        Data Flows
+        Data Protection Strategy
+          encrypt
+          steganography
+          some key areas
+            • Backup and recovery
+            • Data life cycle
+            • Physical security
+            • Security culture
+            • Privacy
+            • Organizational change
+        Implementation, Testing, and Tuning
+          comparing competing products
+            • Sensitive data awareness
+            • Policy engine
+            • Interoperability
+            • Accuracy
+        Network DLP (NDLP)
+          applies data protection policies to data in motion
+          DLP Resiliency
+            Resiliency is the ability to deal with challenges, damage, and crises and bounce back to normal or near-normal condition in short order.
+        Endpoint DLP (EDLP)
+          applies protection policies to data at rest and data in use.
+        Hybrid DLP
+Domain 3. Security Architecture and Engineering
+  System Architecture
+    standards
+      IEEE Recommended Practice for Architectural Description of Software-Intensive Systems. 2000.
+      ISO/IEC/IEEE 42010. System Architecture. year 2011
+        • Architecture
+          Fundamental organization of a system embodied in its components
+        • Architecture description (AD)
+          Collection of document types to convey an architecture in a formal manner.
+        • Stakeholder
+        • View
+          Representation of a whole system from the perspective of a related set of concerns.
+        • Viewpoint
+          A specification of the conventions for constructing and using a view.
+  Computer Architecture
+    encompasses
+      central processing unit,
+      memory chips
+      logic circuits
+      storage devices
+      input and output devices
+      security components
+      buses
+      networking interfaces
+    central processing unit (CPU)
+      program status word (PSW)
+        user mode (also called problem state)
+        privileged mode (also called kernel or supervisor mode)
+    Multiprocessing
+    Memory Types
+      Random access memory (RAM)
+        dynamic RAM (DRAM)
+          Hardware Segmentation
+        Static RAM (SRAM)
+      additional types of RAM
+        • Synchronous DRAM (SDRAM)
+        • Extended data out DRAM (EDO DRAM)
+        • Burst EDO DRAM (BEDO DRAM)
+        Double data rate SDRAM (DDR SDRAM)
+      Read-Only Memory(ROM)
+        Programmable read-only memory (PROM)
+        Erasable programmable read-only memory (EPROM)
+        electrically erasable programmable read-only memory (EEPROM)
+      Cache Memory
+        Level 1 (L1) is faster than Level 2 (L2), and L2 is faster than L3
+      Memory Mapping
+        absolute addresses
+        logical addresses
+        relative addresses
+      Buffer Overflows
+        Memory Protection Techniques
+          address space layout randomization (ASLR),
+          data execution prevention (DEP),
+      Memory Leaks
+        garbage collector
+        developing better code
+  Operating Systems
+    Process Management
+      multiprogramming
+      multitasking
+        preemptive multitasking
+        Cooperative multitasking
+      two categories of interrupts
+        maskable
+        nonmaskable
+      Memory Stacks
+        last in, first out (LIFO)
+      Thread Management
+      Process Scheduling
+        denial-of-service (DoS)
+        software deadlock
+      Process Activity
+        Process isolation
+          • Encapsulation of objects
+          • Time multiplexing of shared resources
+          • Naming distinctions
+            process identification (PID)
+          • Virtual memory mapping
+    Memory Management
+      The goals of memory management
+        • Provide an abstraction level for programmers
+        • Maximize performance with the limited amount of memory available
+        • Protect the operating system and applications loaded into memory
+      five basic responsibilities
+        Relocation
+          • Swap contents from RAM to the hard drive as needed
+          • Provide pointers for applications if their instructions and memory segment have been moved to a different location in main memory
+        Protection
+          • Limit processes to interact only with the memory segments assigned to them
+          • Provide access control to memory segments
+        Sharing
+          • Use complex controls to ensure integrity and confidentiality when processes need to use the same shared memory segments
+          • Allow many users with different levels of access to interact with the same application running in one memory segment
+        Logical organization
+          • Segment all memory types and provide an addressing scheme for each at an abstraction level
+          • Allow for the sharing of specific software modules, such as dynamic link library (DLL) procedures
+        Physical organization
+          • Segment the physical memory space for application and operating system processes
+      Memory Protection Issues
+        • Every address reference is validated for protection.
+        • Two or more processes can share access to the same segment with potentially different access rights.
+        • Different instruction and data types can be assigned different levels of protection.
+        • Processes cannot generate an unpermitted address or gain access to an unpermitted segment.
+      Virtual Memory
+        virtual memory paging
+        Swap space
+          While this unencrypted data is sitting in RAM, the system could write out the data to the swap space on the hard drive in its unencrypted state
+    Input/Output Device Management
+      Type
+        block
+          disk drive
+        character
+          printer, network interface card (NIC), or mouse,
+      Interrupts
+        • Programmed I/O
+        • Interrupt-driven I/O
+        • I/O using DMA
+          unmapped I/O
+        • Premapped I/O
+        • Fully mapped I/O
+    CPU Architecture Integration
+      microarchitectures
+      Isolation
+        memory protection
+        ring-based architecture.
+      CPU Operation Modes
+        kernel mode
+          ring 0
+        user mode
+      Process Domain
+        The higher the ring level that the process executes within, the larger the domain of resources that is available to it.
+    Operating System Architectures
+      Monolithic
+      layered operating system architecture
+        provide data hiding
+      Microkernel architecture
+      hybrid microkernel architecture
+    Virtual Machines
+      Virtual machines can be used to provide secure, isolated sandboxes for running untrusted applications.
+      ...
+  System Security Architecture
+    Security Policy
+      is a strategic tool that dictates how sensitive information and resources are to be managed and protected
+    Security Architecture Requirements
+      trusted computing base (TCB)
+        is a collection of all the hardware, software, and firmware components within a system that provides some type of security and enforces the system’s security policy.
+      Security Perimeter
+        an imaginary boundary
+      Reference Monitor
+        is an abstract machine that mediates all access subjects have to objects, both to ensure that the subjects have the necessary access rights and to protect the objects from unauthorized access and destructive modification.
+        is an access control concept
+        referred to as the “reference monitor concept” or an “abstract machine.”
+      Security Kernel
+        is made up of hardware, software, and firmware components that fall within the TCB, and it implements and enforces the reference monitor concept
+        three main requirements
+          • It must provide isolation for the processes carrying out the reference monitor concept, and the processes must be tamperproof.
+          • It must be invoked for every access attempt and must be impossible to circumvent. Thus, the security kernel must be implemented in a complete and foolproof way.
+          • It must be small enough to be tested and verified in a complete and comprehensive manner.
+        The TCB is the totality of protection mechanisms within a computer system that work together to enforce a security policy
+  Security Models
+    Bell-LaPadula Model(1970s)
+      enforces the confidentiality aspects of access control
+      is called a multilevel security system
+      it provides and addresses confidentiality only
+      Three main rules
+        • Simple security rule
+          no read up
+        • *-property (star property) rule
+          no write down
+        • Strong star property rule
+          states that a subject who has read and write capabilities can only perform both of those functions at the same security level
+    Biba Model
+      is a security model that addresses the integrity of data within a system
+      three main rules
+        • *-integrity axiom
+          no write up
+        • Simple integrity axiom
+          no read down
+        • Invocation property
+          A subject cannot request service (invoke) at a higher integrity.
+    Clark-Wilson Model
+      protecting the integrity of information
+      elements
+        • Users Active agents
+        • Transformation procedures (TPs) Programmed abstract operations, such as read, write, and modify
+        • Constrained data items (CDIs) Can be manipulated only by TPs
+        • Unconstrained data items (UDIs) Can be manipulated by users via primitive read and write operations
+        • Integrity verification procedures (IVPs) Check the consistency of CDIs with external reality
+    Noninterference Model
+      to ensure any actions that take place at a higher security level do not affect, or interfere with, actions that take place at a lower level
+      Covert Channels
+        is a way for an entity to receive information in an unauthorized manner
+        storage
+        timing
+    Brewer and Nash Model
+      also called the Chinese Wall model
+      states that a subject can write to an object if, and only if, the subject cannot read another object that is in a different dataset.
+      The main goal of the model is to protect against conflicts of interest by users’ access attempts.
+    Graham-Denning Model
+      define
+        addresses some of these issues and defines a set of basic rights in terms of commands that a specific subject can execute on an object.
+      rules
+        • How to securely create an object
+        • How to securely create a subject
+        • How to securely delete an object
+        • How to securely delete a subject
+        • How to securely provide the read access right
+        • How to securely provide the grant access right
+        • How to securely provide the delete access right
+        • How to securely provide transfer access rights
+    Harrison-Ruzzo-Ullman Mode(HRU)
+      This model shows how a finite set of procedures can be available to edit the access rights of a subject.
+      HRU model is used by software designers to ensure that no unforeseen vulnerability is introduced and the stated access control goals are achieved
+  Systems Evaluation
+    Common Criteria（CC)
+      name: ISO/IEC 15408
+        • ISO/IEC 15408-1 Introduction and general model
+        • ISO/IEC 15408-2 Security functional components
+        • ISO/IEC 15408-3 Security assurance components
+      Evaluation Assurance Level (EAL)
+        • EAL1 Functionally tested
+        • EAL2 Structurally tested
+        • EAL3 Methodically tested and checked
+        • EAL4 Methodically designed, tested, and reviewed
+        • EAL5 Semiformally designed and tested
+        • EAL6 Semiformally verified design and tested
+        • EAL7 Formally verified design and tested
+      protection profile
+        • Security problem description
+          Lays out the specific problems (i.e., threats) that any compliant product must address.
+        • Security objectives
+          Lists the functionality (i.e., controls) that compliant products must provide in order to address the security problems.
+        • Security requirements
+          These are very specific requirements for compliant products. They are detailed enough for implementation by system developers, and for evaluation by independent laboratories.
+      Components
+        • Protection profile (PP)
+          Description of a needed security solution.
+        • Target of evaluation (TOE)
+          Product proposed to provide a needed security solution.
+        • Security target
+          Vendor’s written explanation of the security functionality and assurance mechanisms that meet the needed security solution
+        • Security functional requirements
+          Individual security functions that must be provided by a product.
+        • Security assurance requirements
+          Measures taken during development and evaluation of the product to assure compliance with the claimed security functionality
+        • Packages—EALs
+          Functional and assurance requirements are bundled into packages for reuse.
+  Certification vs. Accreditation
+    Certification
+      is the comprehensive technical evaluation of the security components and their compliance for the purpose of accreditation.
+    Accreditation
+      is the formal acceptance of the adequacy of a system’s overall security and functionality by management
+    Certification and accreditation (C&A)
+      Federal Information Security Management Act of 2002 (FISMA)
+  Open vs. Closed Systems
+    Open Systems
+      Systems described as open are built upon standards, protocols, and interfaces that have published specifications.
+    Closed Systems
+      Systems referred to as closed use an architecture that does not follow industry standards.
+  Systems Security
+    Client-Based Systems
+    Client/Server Systems
+    Distributed Systems
+    Cloud Computing
+      • Software as a Service (SaaS)
+      • Platform as a Service (PaaS)
+      • Infrastructure as a Service (IaaS)
+    Parallel Computing
+      Bit-level parallelism
+        takes place in every computing device we use these days
+          32bit
+          64bit
+      Instruction-level parallelism
+      Task-level parallelism
+      data parallelism
+        describes the distribution of data among different nodes that then process it in parallel
+    Database Systems
+      Aggregation
+        is the act of combining information from separate sources
+      Inference
+        is the ability to derive information not explicitly available.
+        Context-dependent access control
+        content-dependent access control
+        Cell suppression
+          is a technique used to hide specific cells that contain information that could be used in inference attacks
+        Noise and perturbation
+          is a technique of inserting bogus information in the hopes of misdirecting an attacker or confusing the matter enough that the actual attack will not be fruitful.
+    Web-Based Systems
+      analyzing the website architecture
+      failing securely
+      (WAFs
+      security through obscurity
+      encryption
+      human element.
+    Mobile Systems
+      issues
+        • False base stations can be created.
+        • Confidential data can be stolen.
+        • Camera and microphone functionality can be used improperly.
+        • Internet sites can be accessed in violation of company policies.
+        • Malicious code can be downloaded.
+        • Encryption can be weak and not end to end.
+      enterprise mobile device security
+        • Only devices that can be centrally managed should be allowed access to corporate resources.
+        • Remote policies should be pushed to each device, and user profiles should be encrypted with no local options for modification.
+        • Data encryption, idle timeout locks, screen-saver lockouts, authentication, and remote wipe should be enabled.
+        • Bluetooth capabilities should be locked down, only allowed applications should be installed, camera policies should be enforced, and restrictions for social media sites (Facebook, Twitter, etc.) should be enabled.
+        • Endpoint security should expand to mobile endpoints.
+        • 802.1X should be implemented on wireless VoIP clients on mobile devices.
+    Cyber-Physical Systems
+      Embedded Systems
+      Internet of Things
+        issues
+          • Authentication
+          • Encryption
+          • Updates
+      Industrial Control Systems(ICS)
+        Programmable Logic Controllers (PLC)
+        Distributed Control System (DCS)
+        Supervisory Control and Data Acquisition (SCADA)
+          endpoints
+            remote terminal unit (RTU)
+          backends
+            data acquisition servers (DAS)
+          user stations.
+            human-machine interface (HMI),
+        ICS Security
+          NIST SP 800-82
+            • Apply a risk management process to ICS.
+            • Segment the network to place IDS/IPS at the subnet boundaries.
+            • Disable unneeded ports and services on all ICS devices.
+            • Implement least privilege through the ICS.
+            • Use encryption wherever feasible.
+            • Ensure there is a process for patch management.
+            • Monitor audit trails regularly.
+  A Few Threats to Review
+    Maintenance Hooks
+      Countermeasures
+        • Use a host-based intrusion detection system to watch for any attackers using back doors into the system.
+        • Use file system encryption to protect sensitive information.
+        • Implement auditing to detect any type of back door use.
+    Time-of-Check/Time-of-Use Attacks(TOC/TOU)
+      Race conditions
+      Countermeasures
+        Use lock
+  Cryptography Definitions and Concepts
+    Definitions and Concepts
+      plaintext
+      ciphertext
+      algorithm
+        cipher
+      key
+    Cryptosystems
+      • Software
+      • Protocols
+      • Algorithms
+      • Keys
+    Kerckhoffs’ Principle
+      the only secrecy involved with a cryptography system should be the key
+      the algorithm should be publicly known
+    The Strength of the Cryptosystem
+      million-instruction-per-second (MIPS)
+    One-Time Pad
+      • The pad must be used only one time.
+      • The pad must be as long as the message.
+      • The pad must be securely distributed and protected at its destination.
+      • The pad must be made up of truly random values.
+      • Secured at sender’s and receiver’s sites
+    Running and Concealment Ciphers
+      running key cipher
+      concealment cipher
+        also called a null cipher
+        is a type of steganography method.
+    Steganography
+      • Carrier A signal, data stream, or file that has hidden information (payload) inside of it
+      • Stegomedium The medium in which the information is hidden
+      • Payload The information that is to be concealed and transmitted
+      method
+        least significant bit (LSB)
+  Types of Ciphers
+    Types of Ciphers
+      Substitution Ciphers
+        Caesar cipher
+      Transposition Ciphers
+        frequency analysis
+  Methods of Encryption
+    Symmetric
+      strengths and weakness
+        Strengths
+          • Much faster (less computationally intensive) than asymmetric systems.
+          • Hard to break if using a large key size.
+        Weaknesses
+          • Requires a secure mechanism to deliver keys properly.
+          • Each pair of users needs a unique key, possibly making key management overwhelming.
+          • Provides confidentiality but not authenticity or nonrepudiation.
+      examples
+        • Data Encryption Standard (DES)
+        • Triple-DES (3DES)
+        • Blowfish
+        • International Data Encryption Algorithm (IDEA)
+        • RC4, RC5, and RC6
+        • Advanced Encryption Standard (AES)
+    Asymmetric Algorithms
+      strengths and weakness
+        Strengths
+          • Better key distribution than symmetric systems.
+          • Better scalability than symmetric systems.
+          • Can provide authentication and nonrepudiation.
+        Weaknesses
+          • Works much more slowly than symmetric systems.
+          • Mathematically intensive tasks.
+      examples
+        • Rivest-Shamir-Adleman (RSA)
+        • Elliptic curve cryptosystem (ECC)
+        • Diffie-Hellman
+        • El Gamal
+        • Digital Signature Algorithm (DSA)
+    Block Ciphers
+    Stream Ciphers
+    Initialization Vectors
+      characteristics
+        • Easy to implement in hardware
+        • Long periods of no repeating patterns within keystream values
+        • A keystream not linearly related to the key
+        • Statistically unbiased keystream (as many zeroes as ones)
+    Cryptographic Transformation Techniques
+      • Compression
+      • Expansion
+      • Padding
+      • Key mixing
+    Hybrid Encryption Methods
+    Session Keys
+  Types of Symmetric Systems
+    • Data Encryption Standard (DES)
+      Data Encryption Algorithm (DEA)
+      56 bits make up the true key
+      The result is 64-bit blocks of ciphertext
+      brute-force attack
+      DES Modes
+        • Electronic Code Book (ECB)
+          • Operations can be run in parallel, which decreases processing time.
+          • Errors are contained. If an error takes place during the encryption process, it only affects one block of data.
+          • It is only usable for the encryption of short messages.
+          • It cannot carry out preprocessing functions before receiving plaintext.
+        • Cipher Block Chaining (CBC)
+        • Cipher Feedback (CFB)
+        • Output Feedback (OFB)
+        • Counter (CTR)
+    • Triple-DES (3DES)
+      Triple-DES
+        • DES-EEE3
+        • DES-EDE3
+        • DES-EEE2
+        • DES-EDE2
+    • Advanced Encryption Standard (AES)
+      AES candidates
+        FIPS PUB 197
+          • MARS Developed by the IBM team that created Lucifer
+          • RC6 Developed by RSA Laboratories
+          • Serpent Developed by Ross Anderson, Eli Biham, and Lars Knudsen
+          • Twofish Developed by Counterpane Systems
+          • Rijndael Developed by Joan Daemen and Vincent Rijmen
+      rounds
+        • If both the key and block size are 128 bits, there are 10 rounds.
+        • If both the key and block size are 192 bits, there are 12 rounds.
+        • If both the key and block size are 256 bits, there are 14 rounds.
+    • International Data Encryption Algorithm (IDEA)
+    • Blowfish
+    • RC4, RC5, and RC6
+      Cryptography Notation
+        shorthand
+          • w = Word size, in bits, which can be 16, 32, or 64 bits in length
+          • r = Number of rounds, which can be 0 to 255
+          • b = Key size, in bytes
+        RC5-32/12/16
+  Types of Asymmetric Systems
+    Diffie-Hellman Algorithm
+      MQV (Menezes-Qu-Vanstone)
+      based on the difficulty of calculating logarithms in a finite field.
+    RSA
+      Diving into Numbers
+      One-Way Functions
+      provides: digital signatures, secure key distribution, and encryption.
+    El Gamal
+      based on the difficulty of calculating logarithms in a finite field.
+      used for digital signatures, encryption, and key exchange.
+    Elliptic Curve Cryptosystems(ECC)
+      provides: digital signatures, secure key distribution, and encryption.
+    Knapsack
+      was discovered to be insecure and is not currently used in cryptosystems
+    Zero Knowledge Proof
+  Message Integrity
+    The One-Way Hash
+      Hash Message Authentication Code (HMAC)
+      Cipher Block Chaining Message Authentication Code (CBC-MAC)
+      Cipher-Based Message Authentication Code (CMAC)
+      CCM
+        CTR + CBC-MAC
+    Various Hashing Algorithms
+      characteristics
+        • The hash should be computed over the entire message.
+        • The hash should be a one-way function so messages are not disclosed by their values.
+        • Given a message and its hash value, computing another message with the same hash value should be impossible.
+        • The function should be resistant to birthday attacks
+    MD4
+    MD5
+    SHA
+    Attacks Against One-Way Hash Functions
+      Birthday Attack
+        253
+        23
+  Public Key Infrastructure
+    Certificate Authorities
+      registration authority (RA)
+      Online Certificate Status Protocol (OCSP)
+        certificate revocation list (CRL).
+    Certificates
+      The Registration Authority(RA)
+    PKI Steps
+    made up
+      • Certification authority
+      • Registration authority
+      • Certificate repository
+      • Certificate revocation system
+      • Key backup and recovery system
+      • Automatic key update
+      • Management of key histories
+      • Timestamping
+      • Client-side software
+    supplies the following security services
+      • Confidentiality
+      • Access control
+      • Integrity
+      • Authentication
+      • Nonrepudiation
+  Applying Cryptography
+    Services of Cryptosystems
+      provide the following services
+        • Confidentiality
+        • Integrity
+        • Authentication
+        • Authorization
+        • Nonrepudiation
+    Digital Signatures
+      • A message can be encrypted, which provides confidentiality.
+      • A message can be hashed, which provides integrity.
+      • A message can be digitally signed, which provides authentication, nonrepudiation, and integrity.
+      • A message can be encrypted and digitally signed, which provides confidentiality,authentication, nonrepudiation, and integrity.
+    Digital Signature Standard
+      Digital Signature Standard (DSS).
+    Key Management
+      Kerberos
+      Key Management Principles
+        Rules for Keys and Key Management
+          • The key length should be long enough to provide the necessary level of protection.
+          • Keys should be stored and transmitted by secure means.
+          • Keys should be extremely random, and the algorithm should use the full spectrum of the keyspace.
+          • The key’s lifetime should correspond with the sensitivity of the data it is protecting.
+          • The more the key is used, the shorter its lifetime should be.
+          • Keys should be backed up or escrowed in case of emergencies.
+          • Keys should be properly destroyed when their lifetime comes to an end.
+    Trusted Platform Module
+      TPM Uses
+        Persistent Memory
+          • Endorsement Key (EK)
+          • Storage Root Key (SRK)
+        Versatile Memory
+          • Attestation Identity Key (AIK)
+          • Platform Configuration Registers (PCR)
+          • Storage keys
+    Digital Rights Management (DRM)
+  Attacks on Cryptography
+    Ciphertext-Only Attacks
+      most common type
+    Known-Plaintext Attacks
+    Chosen-Plaintext Attacks
+    Chosen-Ciphertext Attacks
+    Differential Cryptanalysis
+    Linear Cryptanalysis
+    Side-Channel Attacks
+    Replay Attacks
+    Algebraic Attacks
+    Analytic Attacks
+    Statistical Attacks
+    Social Engineering Attacks
+    Meet-in-the-Middle Attacks
+  Site and Facility Security
+    broad categories
+      • Natural environmental threats
+      • Supply system threats
+      • Manmade threats
+      • Politically motivated threats
+  The Site Planning Process
+    physical security program
+      • Crime and disruption prevention through deterrence
+        Fences, security guards, warning signs, and so forth
+      • Reduction of damage through the use of delaying mechanisms
+        Layers of defenses that slow down the adversary, such as locks, security personnel, and barriers
+      • Crime or disruption detection
+        Smoke detectors, motion detectors, CCTV, and so forth
+      • Incident assessment
+        Response of security guards to detected incidents and determination of damage level
+      • Response procedures
+        Fire suppression mechanisms, emergency response processes, law enforcement notification, and consultation with outside security professionals
+    metrics
+    Crime Prevention Through Environmental Design(CPTED)
+      Natural Access Control
+        Sidewalks, lights, and landscaping
+      Natural Surveillance
+        security guards
+        CCTV
+        straight lines of sight, low landscaping, raised entrances
+      Natural Territorial Reinforcement
+        Open areas
+    Designing a Physical Security Program
+      investigate
+        • Construction materials of walls and ceilings
+        • Power distribution systems
+        • Communication paths and types (copper, telephone, fiber)
+        • Surrounding hazardous materials
+        • Exterior components
+          • Topography
+          • Proximity to airports, highways, railroads
+          • Potential electromagnetic interference from surrounding devices
+          • Climate
+          • Soil
+          • Existing fences, detection sensors, cameras, barriers
+          • Operational activities that depend upon physical resources
+          • Vehicle activity
+          • Neighbors
+      various regulations
+        safety and health regulations; fire codes; state and local building codes; Departments of Defense, Energy, or Labor requirements; or some other agency’s regulations.
+        Every organization should have a facility safety officer
+        Occupational Safety and Health Administration (OSHA)
+        Environmental Protection Agency (EPA)
+      Facility
+      Construction
+        Walls
+          • Combustibility of material (wood, steel, concrete)
+          • Fire rating
+          • Reinforcements for secured areas
+        Doors
+          • Combustibility of material (wood, pressed board, aluminum)
+          • Fire rating
+          • Resistance to forcible entry
+          • Emergency marking
+          • Placement
+          • Locked or controlled entrances
+          • Alarms
+          • Secure hinges
+          • Directional opening
+          • Electric door locks that revert to an unlocked state for safe evacuation in power outages
+          • Type of glass—shatterproof or bulletproof glass requirements
+        Ceilings
+          • Combustibility of material (wood, steel, concrete)
+          • Fire rating
+          • Weight-bearing rating
+          • Drop-ceiling considerations
+        Windows
+          • Translucent or opaque requirements
+          • Shatterproof
+          • Alarms
+          • Placement
+          • Accessibility to intruders
+        Flooring
+          • Weight-bearing rating
+          • Combustibility of material (wood, steel, concrete)
+          • Fire rating
+          • Raised flooring
+          • Nonconducting surface and material
+        Heating, ventilation, and air conditioning
+          • Positive air pressure
+          • Protected intake vents
+          • Dedicated power lines
+          • Emergency shutoff valves and switches
+          • Placement
+        Electric power supplies
+          • Backup and alternative power supplies
+          • Clean and steady power source
+          • Dedicated feeders to required areas
+          • Placement and access to distribution panels and circuit breakers
+        Water and gas lines
+          • Shutoff valves—labeled and brightly painted for visibility
+          • Positive flow (material flows out of building, not in)
+          • Placement—properly located and labeled
+        Fire detection and suppression
+          • Placement of sensors and detectors
+          • Placement of suppression systems
+          • Type of detectors and suppression agents
+      Entry Points
+        Doors
+          • Vault doors
+          • Personnel doors
+          • Industrial doors
+          • Vehicle access doors
+          • Bullet-resistant doors
+          mantrap
+            piggybacking
+          turnstiles
+            piggybacking
+        Window Types
+          • Standard
+          • Tempered
+          • Acrylic
+          • Wired
+          • Laminated
+          • Solar window film
+          • Security film
+      Internal Compartments
+        Server Rooms
+          Water detectors
+            • Equipment
+            • Flooring
+            • Walls
+            • Computers
+            • Facility foundations
+          Location of water detectors
+            • Under raised floors
+            • On dropped ceilings
+            uninterrupted power supply (UPS) or generators
+            HVAC
+      Distribution Facilities
+        one main distribution facility (MDF)
+        intermediate distribution facilities (IDFs)
+        more external data lines
+      Storage Facilities
+  Internal Support Systems
+    Electric Power
+      Power Protection
+        UPSs
+          Online UPS systems
+          Standby UPS
+          Backup power
+        power line conditioners
+        backup sources
+      Electric Power Issues
+        interference
+          electromagnetic interference (EMI)
+          radio frequency interference (RFI),
+        different types of voltage fluctuations
+          Power excess
+            • Spike Momentary high voltage
+            • Surge Prolonged high voltage
+          Power loss
+            • Fault Momentary power outage
+            • Blackout Prolonged, complete loss of electric power
+          Power degradation
+            • Sag/dip Momentary low-voltage condition, from one cycle to a few seconds
+            • Brownout Prolonged power supply that is below normal voltage
+            • In-rush current Initial surge of current required to start a load
+      Preventive Measures and Good Practices
+        • Employ surge protectors to protect from excessive current.
+        • Shut down devices in an orderly fashion to help avoid data loss or damage to devices due to voltage changes.
+        • Employ power line monitors to detect frequency and voltage amplitude changes.
+        • Use regulators to keep voltage steady and the power clean.
+        • Protect distribution panels, master circuit breakers, and transformer cables with access controls.
+        • Provide protection from magnetic induction through shielded lines.
+        • Use shielded cabling for long cable runs.
+        • Do not run data or power lines directly over fluorescent lights.
+        • Use three-prong connections or adapters if using two-prong connections.
+        • Do not plug outlet strips and extension cords into each other.
+    Environmental Issues
+      Fire Prevention, Detection, and Suppression
+        Types of Fire Detection
+          Portable fire extinguishers
+          Fire Resistance Ratings
+          Smoke-activated detectors
+            are good for early warning devices
+          Heat-activated detectors
+            can be configured to sound an alarm either when a predefined temperature (fixed temperature) is reached or when the temperature increases over time (rate-of-rise)
+            Rate-of-rise temperature sensors
+            fixed-temperature sensors
+          Four Types of Fires and Their Suppression Methods
+        Fire Suppression
+          The Montreal Protocol banned halon in 1987
+          The most effective replacement for halon is FM-200
+        Water Sprinklers
+          • Wet pipe
+          • Dry pipe
+            holding tank
+            allowing the water valve to be opened by the water pressure.
+          • Preaction
+            similar to dry pipe systems
+            not released right away
+            A thermal-fusible link on the sprinkler head has to melt before the water is released.
+          • Deluge
+            A deluge system has its sprinkler heads wide open to allow a larger volume of water to be released in a shorter period
+Domain 4. Communication and Network Security
+  Open Systems Interconnection Reference Model
+    described by ISO Standard 7498-1,
+    The OSI and TCP/IP networking models
+    Protocol
+      A network protocol is a standard set of rules that determines how systems will communicate across networks.
+    Application Layer
+      protocols
+        • File Transfer Protocol (FTP)
+        • Trivial File Transfer Protocol (TFTP)
+        • Simple Network Management Protocol (SNMP)
+        • Simple Mail Transfer Protocol (SMTP)
+        • Telnet
+        • Hypertext Transfer Protocol (HTTP)
+    Presentation Layer
+      standards
+        • American Standard Code for Information Interchange (ASCII)
+        • Extended Binary-Coded Decimal Interchange Mode (EBCDIC)
+        • Tagged Image File Format (TIFF)
+        • Joint Photographic Experts Group (JPEG)
+        • Motion Picture Experts Group (MPEG)
+        • Musical Instrument Digital Interface (MIDI)
+    Session Layer
+      different modes
+        • Simplex
+        • Half-duplex
+        • Full-duplex
+      Secure RPC (SRPC)
+      protocols
+        • Network Basic Input Output System (NetBIOS)
+        • Password Authentication Protocol (PAP)
+        • Point-to-Point Tunneling Protocol (PPTP)
+        • Remote Procedure Call (RPC)
+    Transport Layer
+      protocols
+        • Transmission Control Protocol (TCP)
+        • User Datagram Protocol (UDP)
+        • Sequenced Packet Exchange (SPX)
+    Network Layer
+      protocols
+        • Internet Protocol (IP)
+        • Internet Control Message Protocol (ICMP)
+        • Internet Group Management Protocol (IGMP)
+        • Routing Information Protocol (RIP)
+        • Open Shortest Path First (OSPF)
+        • Internetwork Packet Exchange (IPX)
+    Data Link Layer
+      the Logical Link Control (LLC)
+      Media Access Control (MAC).
+      framing
+      protocols
+        • Address Resolution Protocol (ARP)
+        • Reverse Address Resolution Protocol (RARP)
+        • Point-to-Point Protocol (PPP)
+        • Serial Line Internet Protocol (SLIP)
+        • Ethernet (IEEE 802.3)
+        • Token Ring (IEEE 802.5)
+        • Wireless Ethernet (IEEE 802.11)
+    Physical Layer
+      converts bits into voltage for transmission
+      standard interfaces
+        • RS/EIA/TIA-422, RS/EIA/TIA-423, RS/EIA/TIA-449, RS/EIA/TIA-485
+        • 10Base-T, 10Base2, 10Base5, 100Base-TX, 100Base-FX, 100Base-T, 1000Base-T, 1000Base-SX
+        • Integrated Services Digital Network (ISDN)
+        • Digital subscriber line (DSL)
+        • Synchronous Optical Networking (SONET)
+    Multilayer Protocols
+      Distributed Network Protocol 3 (DNP3)
+        is a communications protocol designed for use in SCADA systems, particularly those within the power sector
+      Controller Area Network Bus(CAN bus)
+        Another multilayer protocol that had almost no security features until very recently is the one that runs most automobiles worldwide.
+  TCP/IP Model
+    TCP
+      Port Types
+        • Telnet port 23
+        • SMTP port 25
+        • HTTP port 80
+        • SNMP ports 161 and 162
+        • FTP ports 21 and 20
+      TCP Handshake
+      attack
+        SYN flood
+        TCP session hijacking
+      Data Structures
+      Major Differences Between TCP and UDP
+    IP Addressing
+      Subnetting
+      supernetting
+        classless interdomain routing (CIDR)
+      IPv4 Addressing
+      Time to Live (TTL)
+      Type of Service (ToS)
+    IPv6
+      IP next generation (IPng),
+      Network Address Translation
+      Automatic tunneling
+        6to4 tunneling method
+          are used on the Internet
+        Teredo
+          are used on the Internet
+        IntraSite Automatic Tunnel Addressing Protocol (ISATAP)
+          is used for connectivity of systems within a specific network
+      Various IPv4 to IPv6 tunneling techniques
+    Layer 2 Security Standards
+      802.1AE
+        the MACSec Security Entity (SecY) decrypts the frame if necessary and computes an integrity check value (ICV) on the frame and compares it with the ICV that was sent with the frame
+        IEEE MAC Security standard (MACSec)
+      IEEE 802.1AR
+        unique per-device identifiers (DevID)
+    Converged Protocols
+      • Fibre Channel over Ethernet (FCoE)
+        storage area networks (SANs)
+      • Multiprotocol Label Switching (MPLS)
+        layer 2.5 protocol
+        MPLS is considered a converged protocol because it can encapsulate any higher-layer protocol and tunnel it over a variety of links.
+      • Internet Small Computer System Interface (iSCSI)
+        iSCSI encapsulates SCSI data in TCP segments.
+      IP convergence
+        VoIP
+  Transmission Media
+    Types of Transmission
+      signal
+        Analog
+        Digital
+          Bandwidth
+          Data throughput
+            Data throughput values can be higher than bandwidth values if compression mechanisms are implemented.
+      types
+        Asynchronous
+          • No timing component
+          • Surrounds each byte with processing bits
+          • Parity bit used for error control
+          • Each byte requires three bits of instruction (start, stop, parity)
+        Synchronous
+          • Timing component for data transmission synchronization
+          • Robust error checking, commonly through cyclic redundancy checking (CRC)
+          • Used for high-speed, high-volume transmissions
+          • Minimal overhead compared to asynchronous communication
+      transmission
+        Baseband
+          uses the entire communication channel for its transmission
+        Broadband
+          divides the communication channel into individual and independent subchannels so that different types of data can be transmitted simultaneously.
+      Cabling
+        Coaxial Cable
+        Twisted-Pair Cable
+          shielded twisted pair (STP),
+          unshielded twisted pair (UTP)
+            UTP Cable Ratings
+        Fiber-Optic Cable
+          backbone
+          Fiber Components
+            Light sources
+              • Light-emitting diodes (LEDs)
+              • Diode lasers
+            Optical fiber cable
+              • Single mode
+              • Multimode
+            Light detector
+        Cabling Problems
+          Noise
+          Attenuation
+          Crosstalk
+  Wireless Networks
+    Wireless Communications Techniques
+      eg
+        frequency
+        amplitude
+        CSMA/CD
+        CSMA/CA
+      Spread Spectrum
+        direct sequence spread spectrum (DSSS),
+          DSSS technology uses all of the available bandwidth continuously
+        frequency hopping spread spectrum (FHSS).
+          FHSS uses only a portion of the total bandwidth available at any one time
+      Orthogonal Frequency-Division Multiplexing
+        not a spread spectrum technology
+    WLAN Components
+      Service Set ID (SSID).
+      Basic Service Set (BSS).
+      access point (AP)
+        An ad hoc WLAN has no APs
+    Evolution of WLAN Security
+      IEEE Standard 802.11
+        Wired Equivalent Privacy (WEP)
+          WEP is considered insecure and should not be used.
+        open system authentication (OSA) and shared key authentication (SKA)
+      IEEE Standard 802.11i
+        IEEE 802.11i or Wi-Fi Protected Access II (WPA2)
+          is also called Robust Security Network.
+          use of the AES algorithm in counter mode with CBC-MAC (CCM)
+        WPA also integrates 802.1X port authentication and EAP authentication methods.
+          Temporal Key Integrity Protocol (TKIP),
+      IEEE Standard 802.1X
+        Notice
+          802.1X is not a wireless protocol. It is an access control protocol that can be implemented on both wired and wireless networks.
+        Lightweight Extensible Authentication Protocol (LEAP)
+          Cisco
+        EAP and Transport Layer Security (EAP-TLS),
+          Microsoft
+        Protective EAP (PEAP)
+          only the server uses a digital certificate
+        EAP-Tunneled Transport Layer Security (EAP-TTLS)
+          an EAP protocol that extends TLS
+          EAP-TTLS is designed to provide authentication that is as strong as EAP-TLS
+    Wireless Standards
+      802.11
+      802.11b
+        up to 11 Mbps and works in the 2.4-GHz
+      802.11a
+        5 GHz
+        54 Mbps
+      802.11e
+        QoS
+      802.11f
+      802.11g
+        up to 54 Mbps
+        2.4-GHz && 5G
+      802.11h
+        European wireless rules
+      802.11j
+      802.11n
+        100 Mbps
+        5 GHz
+        multiple input, multiple output (MIMO)
+      802.11ac
+        5-GHz
+        1.3 Gbps
+        802.11ac is backward compatible with 802.11a, 802.11b, 802.11g and 802.11n
+      802.16
+        MAN wireless standard
+        WiMAX
+      802.15.4
+        wireless personal area network (WPAN)
+      Bluetooth Wireless
+        1- to 3-Mbps
+        2.4 GHz
+    Best Practices for Securing WLANs
+      Change the default SSID. Each AP comes with a preconfigured default SSID value.
+      • Implement WPA2 and 802.1X to provide centralized user authentication (e.g., RADIUS, Kerberos). Before users can access the network, require them to authenticate.
+      • Use separate VLANs for each class of users, just as you would on a wired LAN.
+      • If you must support unauthenticated users (e.g., visitors), ensure they are connected to an untrusted VLAN that remains outside your network’s perimeter.
+      • Deploy a wireless intrusion detection system (WIDS).
+      • Physically put the AP at the center of the building. The AP has a specific zone of coverage it can provide.
+      • Logically put the AP in a DMZ with a firewall between the DMZ and internal network.
+      Allow the firewall to investigate the traffic before it gets to the wired network.
+      • Implement VPN for wireless devices to use. This adds another layer of protection for data being transmitted.
+      • Configure the AP to allow only known MAC addresses into the network. Allow only known devices to authenticate. But remember that these MAC addresses are sent in cleartext, so an attacker could capture them and masquerade himself as an authenticated device.
+      • Carry out penetration tests on the WLAN. Use the tools described in this section to identify APs and attempt to break the current encryption scheme being used.
+    two main microwave wireless transmission
+      Satellites
+        ground to orbiter to ground
+      terrestrial
+        (ground to ground
+    Mobile Wireless Communication
+      “multiple access” technologies
+        • Frequency division multiple access (FDMA)
+        • Time division multiple access (TDMA)
+        • Code division multiple access (CDMA)
+        • Orthogonal frequency division multiple access (OFDMA)
+      Mobile Technology Generations
+        First generation (1G):
+        Second generation (2G):
+        Generation 2½ (2.5G):
+        Third generation (3G):
+        Generation 3.5 G (3GPP)
+        Fourth generation (4G)
+  Networking Foundations
+    Network Topology
+      Ring Topology
+      Bus Topology
+      Star Topology
+      Mesh Topology
+    Media Access Technologies
+      Token Passing
+        A token is a 24-bit control frame used to control which computers communicate at what intervals.
+        used by Token Ring and FDDI technologies
+      CSMA
+        CSMA/CD
+          carrier sense multiple access with collision detection (CSMA/CD)
+        CSMA/CA
+          Carrier sense multiple access with collision avoidance (CSMA/CA)
+      Collision Domains
+      Polling
+        is a method of monitoring multiple devices and controlling network access transmission
+      Ethernet
+        IEEE 802.3
+        characteristics
+          • Contention-based technology
+          • Uses broadcast and collision domains
+          • Uses the carrier sense multiple access with collision detection (CSMA/CD) access method
+          • Supports full-duplex communication
+          • Can use coaxial, twisted-pair, or fiber-optic cabling types
+          • Is defined by standard IEEE 802.3
+        types
+          10Base-T
+          100Base-TX
+            Fast Ethernet
+          1000Base-T
+            maximum distance of 100 meters
+          10GBase-T
+      Token Ring
+        is a LAN media access technology that enables the communication and sharing of networking resources.
+        Multistation Access Unit (MAU).
+        IEEE 802.5 standard
+        star-configured topology
+        16 Mbps
+      FDDI
+        Fiber Distributed Data Interface (FDDI)
+        ANSI standard based on IEEE 802.4
+        100 Mbps
+        Copper Distributed Data Interface (CDDI)
+        categories
+          • Single-attachment station (SAS)
+          • Dual-attachment station (DAS)
+          • Single-attached concentrator (SAC)
+          • Dual-attached concentrator (DAC)
+    Transmission Methods
+      broadcast
+      multicast
+      unicast
+  Network Protocols and Services
+    Address Resolution Protocol
+    Dynamic Host Configuration Protocol
+    Reverse Address Resolution Protocol (RARP)
+    Bootstrap Protocol (BOOTP)
+      was created after RARP to enhance the functionality that RARP provides for diskless workstations
+    Internet Control Message Protocol(ICMP)
+      Attacks Using ICMP
+    Simple Network Management Protocol (SNMP)
+      Management Information Base (MIB).
+        An MIB is a logical grouping of managed objects that contain data used for specific management tasks and status checks.
+      SNMP v3
+        implemented for more granular protection
+      ports (161 and 162)
+    Domain Name Service
+      Internet DNS and Domains
+      DNS Threats
+        DNS Splitting
+        DNSSEC
+    E-mail Services
+      Simple Mail Transfer Protocol (SMTP)
+      Post Office Protocol (POP)
+        Simple Authentication and Security Layer (SASL)
+      Internet Message Access Protocol (IMAP)
+      E-mail Relaying
+        Spamming
+      E-mail Threats
+        E-mail spoofing
+          Sender Policy Framework (SPF),
+          DomainKeys Identified Mail (DKIM) 
+          In 2012, SPF and DKIM were brought together to define the Domain-based Message Authentication, Reporting and Conformance (DMARC) system.
+        Phishing
+          whaling attack
+          spear phishing
+    Network Address Translation
+      private IP address ranges
+        • 10.0.0.0–10.255.255.255 Class A networks
+        • 172.16.0.0–172.31.255.255 Class B networks
+        • 192.168.0.0–192.168.255.255 Class C networks
+      Three basic types of NAT
+        • Static mapping
+        • Dynamic mapping
+        • Port address translation (PAT)
+    Routing Protocols
+      autonomous systems (ASs).
+      Interior Gateway Protocol (IGP)
+      Dynamic vs. Static
+        A dynamic routing protocol can discover routes and build a routing table
+        A static routing protocol requires the administrator to manually configure the router’s routing table.
+      Route flapping
+        refers to the constant changes in the availability of routes.
+      Distance-Vector vs. Link-State
+      Interior Routing Protocols/Interior Gateway Protocols
+        • Routing Information Protocol(RIP)
+        • Open Shortest Path First(OSPF)
+        • Interior Gateway Routing Protocol(IGRP)
+        • Enhanced Interior Gateway Routing Protocol(EIGRP)
+        • Virtual Router Redundancy Protocol(VRRP)
+        • Virtual Router Redundancy Protocol(IS-IS)
+      Exterior Routing Protocols
+        exterior gateway protocols (EGPs)
+        Border Gateway Protocol (BGP)
+      Routing Protocol Attacks
+        DoS
+        Wormhole Attack
+  Network Components
+    • Repeaters
+      hub
+        concentrator
+    • Bridges
+      functions
+        • Segments a large network into smaller, more controllable pieces.
+        • Uses filtering based on MAC addresses.
+        • Joins different types of network links while retaining the same broadcast domain.
+        • Isolates collision domains within the same broadcast domain.
+        • Bridging functionality can take place locally within a LAN or remotely to connect two distant LANs.
+        • Can translate between protocol types.
+      work at the data link layer
+      Forwarding Tables
+        Spanning Tree Algorithm (STA),
+        source routing
+    • Routers
+      network layer
+      Main Differences Between Bridges and Routers
+    • Switches
+      Multilayered switches
+      Layer 3 and 4 Switches
+      Layer 2 switches
+      Multiprotocol Label Switching (MPLS)
+      Virtual LANs (VLANs)
+        IEEE 802.1Q
+        tagging
+        attacks
+          VLAN hopping attacks
+          switch spoofing attack
+          double tagging attack
+    Gateways
+      Network Device Differences
+    PBXs
+      A Private Branch Exchange (PBX) is a private telephone switch that is located on a company’s property
+      Network Diagramming
+    Firewalls
+      demilitarized zone (DMZ)
+      use
+        Firewalls are used to restrict access to one network from another network
+      types
+        • Packet filtering
+          egress filtering
+          ingress filtering
+          weaknesses of packet-filtering firewalls
+            • They cannot prevent attacks that employ application-specific vulnerabilities or functions.
+            • They have limited logging functionality.
+            • Most packet-filtering firewalls do not support advanced user authentication schemes.
+            • Many packet-filtering firewalls cannot detect spoofed addresses.
+            • They may not be able to detect packet fragmentation attacks.
+        • Stateful
+          keeping state of a connection
+          Stateful-Inspection Firewall Characteristics
+            • Maintains a state table that tracks each and every communication session
+            • Provides a high degree of security and does not introduce the performance hit that application proxy firewalls introduce
+            • Is scalable and transparent to users
+            • Provides data for tracking connectionless protocols such as UDP and ICMP
+            • Stores and updates the state and context of the data within the packets
+        • Proxy
+          circuit-level proxy
+            SOCKS
+            Characteristics
+              • They do not require a proxy for each and every protocol.
+              • They do not provide the deep-inspection capabilities of an application-level proxy firewall.
+              • They provide security for a wider range of protocols.
+          Application-level proxies
+            Characteristics
+              • Each protocol that is to be monitored must have a unique proxy.
+              • They provide more protection than circuit-level proxy firewalls.
+              • They require more processing per packet and thus are slower than circuit-level proxy firewalls.
+        • Dynamic packet filtering
+          ACLs
+          it gives you the option of allowing any type of traffic outbound and permitting only response traffic inbound.
+        • Kernel proxy
+          a fifth-generation firewall.
+          faster than application-level proxy firewalls because all of the inspection and processing takes place in the kernel and does not need to be passed up to a higher software layer in the operating system.
+        Next-Generation Firewalls(NGFW)
+        Compare
+      three main firewall architectures
+        • Screened host
+          • An external router filters (screens) traffic before it enters the subnet. Traffic headed toward the internal network then goes through two firewalls.
+        • Multihome/Dual-Homed
+          • A single computer with separate NICs connected to each network.
+          • Used to divide an internal trusted network from an external untrusted network.
+          • Must disable a computer’s forwarding and routing functionality so the two networks are truly segregated.
+        • Screened subnet
+          • A router filters (screens) traffic before it is passed to the firewall.
+      Fragmentation Attacks
+        • IP fragmentation
+        • Teardrop attack
+        • Overlapping fragment attack
+      common firewall rules
+        • Silent rule
+        • Stealth rule
+        • Cleanup rule
+        • Negate rule
+    Proxy Servers
+      forwarding proxy
+      open proxy
+      reverse proxy
+    Unified Threat Management
+      issues
+        • Single point of failure for traffic
+        • Single point of compromise
+        • Performance issues
+    Content Distribution Networks
+    Software Defined Networking
+      Approaches to SDN
+        • Open The SDN approach championed by the Open Networking Foundation (ONF)
+        • API
+        • Overlays
+    Endpoints
+    Honeypot
+    Network Access Control (NAC)
+    Virtualized Networks
+  Intranets and Extranets
+    Value-added Networks
+  Metropolitan Area Networks
+    Metro Ethernet
+    SONET
+  Wide Area Networks
+    Telecommunications Evolution
+      • Copper lines carry purely analog signals.
+      • T1 lines carry up to 24 conversations.
+      • T3 lines carry up to 28 T1 lines.
+      • Fiber optics and the SONET network.
+      • Asynchronous Transfer Mode (ATM) over SONET.
+    Dedicated Links
+      T-carriers
+      E-Carriers
+        used by European countries.
+      Optical Carrier
+      More Multiplexing
+        Statistical time-division multiplexing (STDM)
+        Frequency-division multiplexing (FDM)
+        Wave-division multiplexing (WDM)
+    WAN Technologies
+      CSU/DSU
+        data terminal equipment (DTE)
+        data circuit-terminating equipment (DCE)
+      Switching
+        Circuit Switching
+          • Connection-oriented virtual links.
+          • Traffic travels in a predictable and constant manner.
+          • Fixed delays.
+          • Usually carries voice-oriented data.
+        Packet Switching
+          • Packets can use many different dynamic paths to get to the same destination.
+          • Traffic is usually bursty in nature.
+          • Variable delays.
+          • Usually carries data-oriented data.
+      Frame Relay
+        obsolescent
+        DTE
+        DCE
+      Virtual Circuits
+        Frame relay
+        X.25
+        permanent virtual circuit (PVC)
+        switched virtual circuits (SVCs)
+      X.25
+        divided into 128 bytes
+        encapsulated in High-level Data Link Control (HDLC) frames.
+      Asynchronous Transfer Mode (ATM)
+        cell-switching
+        53-byte ATM cells
+        Quality of Service (QoS)
+        rate
+          • Constant bit rate (CBR)
+          • Variable bit rate (VBR)
+          • Unspecified bit rate (UBR)
+          • Available bit rate (ABR)
+        QoS has three basic levels
+          • Best-effort service
+          • Differentiated service
+          • Guaranteed service
+      Synchronous Data Link Control (SDLC)
+      High-level Data Link Control (HDLC)
+        is a framing protocol that is used mainly for device-to-device communication
+      Point-to-Point Protocol (PPP)
+        Link Control Protocol (LCP)
+        Network Control Protocols (NCPs)
+        Password Authentication Protocol (PAP),
+          PAP sends passwords in cleartext and is insecure
+        Challenge Handshake Authentication Protocol (CHAP)
+        Extensible Authentication Protocol (EAP)
+      High-Speed Serial Interface (HSSI)
+      Summary
+  Communications Channels
+    Multiservice Access Technologies
+      combine several types of communication categories (data, voice, and video) over one transmission line.
+    H.323 Gateways
+      a standard that deals with video, real-time audio, and data packet–based transmissions where multiple users can be involved with the data exchange.
+    Digging Deeper into SIP
+      two major components
+        User Agent Client (UAC)
+        User Agent Server (UAS)
+    IP Telephony Issues
+      SPIT (Spam over Internet Telephony).
+      countermeasures
+        • Keep patches updated on each network device involved with VoIP transmissions
+          • The call manager server
+          • The voicemail server
+          • The gateway server
+        • Identify unidentified or rogue telephony devices:
+          • Implement authentication so only authorized telephony devices are working on the network
+        • Install and maintain
+          • Stateful firewalls
+          • VPN for sensitive voice data
+          • Intrusion detection
+        • Disable unnecessary ports and services on routers, switches, PCs, and IP telephones
+        • Employ real-time monitoring that looks for attacks, tunneling, and abusive call patterns through IDS/IPS
+          • Employ content monitoring
+          • Use encryption when data (voice, fax, video) cross an untrusted network
+          • Use a two-factor authentication technology
+          • Limit the number of calls via media gateways
+          • Close the media sessions after completion
+  Remote Access
+    Dial-up Connections
+      security measures
+        • Configure the remote access server to call back the initiating phone number to ensure it is a valid and approved number.
+        • Disable or remove modems if not in use.
+        • Consolidate all modems into one location and manage them centrally, if possible.
+        • Implement use of two-factor authentication, VPNs, and personal firewalls for remote access connections.
+    Integrated Services Digital Network (ISDN)
+      Three ISDN implementations
+        • Basic Rate Interface (BRI) ISDN
+        • Primary Rate Interface (PRI) ISDN
+        • Broadband ISDN (BISDN)
+    DSL
+      • Symmetric DSL (SDSL)
+      • Asymmetric DSL (ADSL)
+      • High-bit-rate DSL (HDSL)
+      • Very High-Data-Rate Digital Subscriber Line (VDSL)
+      • Rate-Adaptive Digital Subscriber Line (RADSL)
+    Cable Modems
+      Data-Over-Cable Service Interface Specifications (DOCSIS)
+    VPN
+      Point-To-Point Tunneling Protocol
+        Generic Routing Encapsulation (GRE)
+        PAP, CHAP, MS-CHAP, or EAP-TLS
+        Microsoft Point-to-Point Encryption (MPPE)
+      Layer 2 Tunneling Protocol
+      Internet Protocol Security
+        • Authentication Header (AH)
+          Provides data integrity, data-origin authentication, and protection from replay attacks
+        • Encapsulating Security Payload (ESP)
+          Provides confidentiality, data-origin authentication, and data integrity
+        • Internet Security Association and Key Management Protocol (ISAKMP)
+          Provides a framework for security association creation and key exchange
+        • Internet Key Exchange (IKE)
+          Provides authenticated keying material for use with ISAKMP
+      Transport Layer Security VPN
+        • TLS portal VPN
+        • TLS tunnel VPN
+    Authentication Protocols
+      Password Authentication Protocol (PAP)
+        vulnerable to sniffing
+        man-in-the-middle
+      Extensible Authentication Protocol (EAP)
+        it provides a framework to enable many types of authentication techniques to be used when establishing network connections. 
+      Challenge Handshake Authentication Protocol (CHAP)
+  Network Encryption
+    Encryption at Different Layers
+      • End-to-end encryption happens within the applications.
+      • TLS encryption takes place at the session layer.
+      • PPTP encryption takes place at the data link layer.
+      • Link encryption takes place at the data link and physical layers.
+    E-mail Encryption Standards
+      Pretty Good Privacy (PGP)
+        is considered a cryptosystem
+      Multipurpose Internet Mail Extensions (MIME)
+      Secure MIME (S/MIME)
+        is a standard for encrypting and digitally signing e-mail and for providing secure data transmissions.
+        provides confidentiality through encryption algorithms, integrity through hashing algorithms, authentication through the use of X.509 public key certificates, and nonrepudiation through cryptographically signed message digests
+    Internet Security
+      HTTP
+      HTTP Secure (HTTPS)
+      Secure Sockets Layer (SSL)
+        Padding Oracle On Downgraded Legacy Encryption (POODLE)
+      Transport Layer Security
+      Cookies
+      Secure Shell (SSH)
+  Network Attacks
+    EXAM TIP
+      (ISC) 2dropped network attacks from this domain in the April 2018 update
+    Denial of Service
+      Malformed Packets
+      Flooding
+      distributed denial-of-service (DDoS)
+      Ransomware
+    Sniffing
+      DNS Hijacking
+        • Host based
+        • Network based
+        • Server based
+          DNSSEC
+    Drive-by Download
+      A drive-by download occurs when a user visits a website that is hosting malicious code and automatically gets infected.
+Domain 5. Identity and Access Management
+  Security Principles
+    • Availability
+    • Integrity
+    • Confidentiality
+  Identification, Authentication, Authorization, and Accountability
+    Race Condition
+    Four steps must happen for a subject to access an object
+    Identification and Authentication
+      Strong authentication
+        something a person knows
+        something a person has
+        something a person is
+      multifactor authentication (MFA)
+      Identity Management(IdM)
+      Identity and access management (IAM)
+      Directories
+        Lightweight Directory Access Protocol (LDAP)
+          X.500 standard
+            dn: cn=Shon Harris,dc=LogicalSecurity,dc=com cn: Shon Harris
+        Directories’ Role in Identity Management
+          meta-directory
+          virtual directory
+      Web access management (WAM)
+    Authentication Methods
+      Credential Management Systems
+        Registration
+        Profile Update
+        Password Managers
+        Password Synchronization
+        Self-Service Password Reset
+        Assisted Password Reset
+        Legacy Single Sign-On
+      Biometrics
+        Type I error (false rejection rate [FRR])
+        Type II error (false acceptance rate [FAR])
+        crossover error rate (CER)
+          called equal error rate (EER).
+        Fingerprint
+        Palm Scan
+        Hand Geometry
+        Retina Scan
+        Iris Scan
+        Signature Dynamics
+        Keystroke Dynamics
+        Voice Print
+        Facial Scan
+        Hand Topography
+      Passwords
+        Password Policies
+          • Electronic monitoring
+          • Access the password file
+          • Brute-force attacks
+          • Dictionary attacks
+          • Social engineering
+          • Rainbow table
+        Clipping level
+        Password Checkers
+          Password Hashing and Encryption
+          Password Aging
+          Limit Logon Attempts
+      Cognitive Password
+      One-Time Password
+        The Token Device
+          Synchronous
+            time-based
+            counter-based(event-based)
+          Asynchronous
+            asynchronous token–generating method
+            challenge/response scheme
+      Cryptographic Keys
+        Passphrase
+        Memory Cards
+        Smart Card
+        Smart Card Attacks
+          fault generation
+          Side-channel attacks
+            differential power analysis
+            electromagnetic analysis
+            timing
+          Software attacks
+          microprobing
+          An ISO/IEC standard, 14443
+            • ISO/IEC 14443-1 Physical characteristics
+            • ISO/IEC 14443-2 Radio frequency power and signal interface
+            • ISO/IEC 14443-3 Initialization and anticollision
+            • ISO/IEC 14443-4 Transmission protocol
+          Radio-Frequency Identification (RFID)
+    Authorization
+      Access Criteria
+        roles
+        groups
+        Physical or logical location
+        Time of day, or temporal isolation
+        Transaction-type restrictions
+      Default to No Access
+      Need to Know
+        Authorization Creep
+      Single Sign-On
+        Kerberos
+          Main Components in Kerberos
+            authentication service (AS)
+            Key Distribution Center (KDC)
+            ticket granting service (TGS)
+              ticket granting ticket (TGT)
+          The Kerberos Authentication Process
+          Weaknesses of Kerberos
+            • The KDC can be a single point of failure.
+            • The KDC must be able to handle the number of requests it receives in a timely manner. It must be scalable.
+            • Secret keys are temporarily stored on the users’ workstations, which means it is possible for an intruder to obtain these cryptographic keys.
+            • Session keys are decrypted and reside on the users’ workstations, either in a cache or in a key table. Again, an intruder can capture these keys.
+            • Kerberos is vulnerable to password guessing.
+            • Network traffic is not protected by Kerberos if encryption is not enabled.
+            • If the keys are too short, they can be vulnerable to brute-force attacks.
+            • Kerberos needs all client and server clocks to be synchronized.
+        Security Domains
+          Resources working under the same security policy and managed by the same group
+        Directory Services
+          LDAP, NetIQ eDirectory, and Microsoft Active Directory
+        Thin Clients
+          Terminals that rely upon a central server for access control, processing, and storage
+    Accountability
+      events
+        System-level events:
+          • System performance
+          • Logon attempts (successful and unsuccessful)
+          • Logon ID
+          • Date and time of each logon attempt
+          • Lockouts of users and terminals
+          • Use of administration utilities
+          • Devices used
+          • Functions performed
+          • Requests to alter configuration files
+        Application-level events
+          • Error messages
+          • Files opened and closed
+          • Modifications of files
+          • Security violations within applications
+        User-level events
+          • Identification and authentication attempts
+          • Files, services, and resources used
+          • Commands initiated
+          • Security violations
+      Keystroke Monitoring
+    Session Management
+      • Timeout
+      • Inactivity
+      • Anomaly
+    Federation
+      Access Control and Markup Languages
+        Hypertext Markup Language (HTML)
+        Extensible Markup Language (XML)
+        Service Provisioning Markup Language (SPML)
+          the Requesting Authority (RA)
+          the Provisioning Service Provider (PSP)
+          the Provisioning Service Target (PST),
+        Security Assertion Markup Language (SAML)
+          Simple Object Access Protocol (SOAP)
+          SAML authentication
+        Extensible Access Control Markup Language (XACML).
+      OpenID
+        • End user
+        • Relying party
+        • OpenID provider
+      OAuth
+        four roles
+          • Client
+          • Resource server
+          • Authorization server
+          • Resource owner
+        OAuth authorization steps
+      OpenID Connect (OIDC)
+        built on the OAuth 2.0 protocol
+        OIDC supports three flows
+          • Authorization code flow T
+          • Implicit flow
+          • Hybrid flow
+        Two common OpenID Connect process flows
+  Integrating Identity as a Service
+    On-premise
+      An on-premise (or on-premises) IdM system is one in which all needed resources remain under your physical control.
+    Cloud
+    Integration Issues
+      “Measure twice and cut once.”
+      Establishing Connectivity
+      Establishing Trust
+      Incremental Testing
+      Integrating Federated Systems
+    Establishing Connectivity
+  Access Control Mechanisms
+    Discretionary Access Control
+      Identity-Based Access Control
+    Mandatory Access Control
+      Multilevel security (MLS)
+      “security labels”
+        “sensitivity labels”
+    Role-Based Access Control
+      ACLs
+      Core RBAC
+        • Has a many-to-many relationship among individual users and privileges
+        • Uses a session as a mapping between a user and a subset of assigned roles
+        • Accommodates traditional but robust group-based access control
+      Hierarchical RBAC
+        • Uses role relations in defining user membership and privilege inheritance.
+        • Reflects organizational structures and functional delineations.
+        • Supports two types of hierarchies:
+          • Limited hierarchies
+          • General hierarchies
+      • Static Separation of Duty (SSD) Relations through RBAC
+      • Dynamic Separation of Duties (DSD) Relations through RBAC
+      can be managed in the following ways:
+        • Non-RBAC
+        • Limited RBAC
+        • Hybrid RBAC
+        • Full RBAC
+    Rule-Based Access Control
+    Attribute-Based Access Control
+      some possible attributes
+        • Subjects
+        • Objects
+        • Actions
+        • Context
+  Access Control Techniques and Technologies
+    Constrained User Interfaces
+      Database views
+      Physically constraining a user interface
+    Remote Access Control Technologies
+      Remote Authentication Dial-In User Service (RADIUS)
+      Terminal Access Controller Access Control System (TACACS)
+        Extended TACACS (XTACACS)
+      TACACS+
+      Diameter
+        Authentication
+          • PAP, CHAP, EAP
+          • End-to-end protection of authentication information
+          • Replay attack protection
+        Authorization
+          • Redirects, secure proxies, relays, and brokers
+          • State reconciliation
+          • Unsolicited disconnect
+          • Reauthorization on demand
+        Accounting
+          • Reporting, roaming operations (ROAMOPS) accounting, event monitoring
+    Access Control Matrix
+      Access Control Lists
+    Content-Dependent Access Control
+      database views
+    Context-Dependent Access Control
+  Managing the Identity and Access Provisioning Life Cycle
+    Provisioning
+      Provisioning pertains to the creation of user objects or accounts.
+    User Access Review
+      • Extended vacation or sabbatical
+      • Hospitalization
+      • Long-term disability (with an expected future return)
+      • Investigation for possible wrong-doing
+      • Unexpected disappearance
+    System Account Access Review
+      every system account eventually needs to be disabled or deprovisioned.
+    Deprovisioning
+  Controlling Physical and Logical Access
+    Access Control Layers
+      Administrative controls
+        • Policy and procedures
+        • Personnel controls
+        • Supervisory structure
+        • Security-awareness training
+        • Testing
+      Physical controls
+        • Network segregation
+        • Perimeter security
+        • Computer controls
+        • Work area separation
+        • Data backups
+        • Cabling
+        • Control zone
+      Technical controls:
+        • System access
+        • Network architecture
+        • Network access
+        • Encryption and protocols
+        • Auditing
+  Access Control Practices
+    Unauthorized Disclosure of Information
+      Object Reuse
+      Emanation Security
+        TEMPEST
+        White Noise
+        Control Zone
+  Access Control Monitoring
+    Intrusion Detection Systems
+      network-based IDS (NIDS)
+      host-based IDS (HIDS)
+      Signature-based
+        • Pattern matching
+          Knowledge- or Signature-Based Intrusion Detection
+        • Stateful matching
+      Anomaly-based
+        • Statistical anomaly–based
+        • Protocol anomaly–based
+        • Traffic anomaly–based
+        • Rule- or heuristic-based
+      Application-based IDS
+    Intrusion Prevention Systems
+    Honeypot
+    Network Sniffers
+  Threats to Access Control
+    Dictionary Attack
+      Countermeasures
+        • Do not allow passwords to be sent in cleartext.
+        • Encrypt the passwords with encryption algorithms or hashing functions.
+        • Employ one-time password tokens.
+        • Use hard-to-guess passwords.
+        • Rotate passwords frequently.
+        • Employ an IDS to detect suspicious behavior.
+        • Use dictionary-cracking tools to find weak passwords chosen by users.
+        • Use special characters, numbers, and upper- and lowercase letters within the password.
+        • Protect password files.
+    Brute-Force Attacks
+      Countermeasures
+        • Perform brute-force attacks to find weaknesses and hanging modems.
+        • Make sure only necessary phone numbers are made public.
+        • Provide stringent access control methods that would make brute-force attacks less successful.
+        • Monitor and audit for such activity.
+        • Employ an IDS to watch for suspicious activity.
+        • Set lockout thresholds.
+    Spoofing at Logon
+      a fake logon screen
+    Phishing and Pharming
+      social engineering
+      Spear-Phishing
+Domain 6. Security Assessment and Testing
+  Assessment, Test, and Audit Strategies
+    Information System Security Audit Process
+      1. Determine the goals, because everything else hinges on this.
+      2. Involve the right business unit leaders to ensure the needs of the business are identified and addressed.
+      3. Determine the scope, because not everything can be tested.
+      4. Choose the audit team, which may consist of internal or external personnel, depending on the goals, scope, budget, and available expertise.
+      5. Plan the audit to ensure all goals are met on time and on budget.
+      6. Conduct the audit while sticking to the plan and documenting any deviations therefrom.
+      7. Document the results, because the wealth of information generated is both valuable and volatile.
+      8. Communicate the results to the right leaders in order to achieve and sustain a strong security posture.
+    Internal Audits
+      • Mark your calendars
+      • Prepare the auditors
+      • Document everything
+      • Make the report easy to read
+    External Audits
+      • Learn the contract
+      • Schedule in- and out-briefs
+      • Travel in pairs
+      • Keep it friendly
+    Third-Party Audits
+      Signing a nondisclosure agreement
+      Facilitating Third-Party Audits
+        • Know the requirements
+        • Pre-audit
+        • Lock in schedules
+        • Get organized
+        • Keep the boss informed
+    Test Coverage
+  Auditing Technical Controls
+    Vulnerability Testing
+      • Personnel testing
+      • Physical testing
+      • System and network testing
+    Penetration Testing
+      five-step process:
+        1. Discovery Footprinting and gathering information about the target
+        2. Enumeration Performing port scans and resource identification methods
+        3. Vulnerability mapping Identifying vulnerabilities in identified systems and resources
+        4. Exploitation Attempting to gain unauthorized access by exploiting vulnerabilities
+        5. Report to management Delivering to management documentation of test findings along with suggested countermeasures
+      varying degrees of knowledge
+        • Zero knowledge The team does not have any knowledge of the target and must start from ground zero.
+        • Partial knowledge The team has some information about the target.
+        • Full knowledge The team has intimate knowledge of the target.
+    War Dialing
+      private branch exchanges (PBXs)
+      facsimile (FAX)
+    Other Vulnerability Types
+      Kernel flaws
+      • Buffer overflows
+      • Symbolic links
+      • File descriptor attacks
+      • Race conditions
+      • File and directory permissions
+    Postmortem
+    Log Reviews
+      Network Time Protocol (NTP)
+      Preventing Log Tampering
+        • Remote logging
+        • Simplex communication
+        • Replication
+        • Write-once media
+        • Cryptographic hash chaining
+      Synthetic Transactions
+      Real User Monitoring
+        passive
+    Misuse Case Testing
+    Code Reviews
+    Code Testing
+    Interface Testing
+  Auditing Administrative Controls
+    Account Management
+      Adding Accounts
+      Modifying Accounts
+        privilege accumulation
+      Suspending Accounts
+    Backup Verification
+      Types of Data
+        User Data Files
+        Databases
+        Mailbox Data
+      Verification
+        • Develop scenarios that capture specific sets of events that are representative of the threats facing the organization.
+        • Develop a plan that tests all the mission-critical data backups in each of the scenarios.
+        • Leverage automation to minimize the effort required by the auditors and ensure tests happen periodically.
+        • Minimize impact on business processes of the data backup test plan so that it can be executed regularly.
+        • Ensure coverage so that every system is tested, though not necessarily in the same test.
+        • Document the results so you know what is working and what needs to be worked on.
+        • Fix or improve any issues you documented.
+    Disaster Recovery and Business Continuity
+      Testing and Revising the Business Continuity Plan
+        Checklist Test
+          also called the desk check tes
+        Structured Walk-Through Test
+        Tabletop Exercises
+        Simulation Test
+        Parallel Test
+        Full-Interruption Test
+        Other Types of Training
+          first aid and cardiac pulmonary resuscitation (CPR)
+        Emergency Response
+      Maintaining the Plan
+      BCP Life Cycle
+    Security Training and Security Awareness Training
+      Social Engineering
+      Online Safety
+      Data Protection
+      Culture
+    Key Performance and Risk Indicators
+      Key Performance Indicators
+        terms
+          • Factor
+          • Measurement
+          • Baseline
+          • Metric
+          • Indicator
+        process
+          1. Choose the factors that can show the state of our security.
+          2. Define baselines for some or all of the factors under consideration.
+          3. Develop a plan for periodically capturing the values of these factors, and fix the sampling period.
+          4. Analyze and interpret the data.
+          5. Communicate the indicators to all stakeholders.
+      Key Risk Indicators
+        KRIs are selected for their impact on the decisions of the senior leaders in the organization
+  Reporting
+    Analyzing Results
+    Writing Technical Reports
+      key elements of a good technical audit report
+        • Executive Summary
+          accountants valuate other assets
+            • The cost approach simply looks at the cost of acquiring or replacing the asset.
+            • The income approach considers the expected contribution of the asset to the firm’s revenue stream.
+            • The market approach is based on determining how much other firms are paying for a similar asset in the marketplace.
+        • Background
+        • Methodology
+        • Findings
+        • Recommendations
+        • Appendices
+  Management Review and Approval
+    Before the Management Review
+    Reviewing Inputs
+    Management Approval
+Domain 7. Security Operations
+  Administrative Management
+    Security and Network Personnel
+      tasks
+        • Implements and maintains security devices and software
+        • Carries out security assessments
+        • Creates and maintains user profiles and implements and maintains access control mechanisms
+        • Configures and maintains security labels in mandatory access control (MAC) environments
+        • Manages password policies
+        • Reviews audit logs
+    Accountability
+    Clipping Levels
+  Physical Security
+    Facility Access Control
+      Locks
+        Mechanical Locks
+          the warded lock
+          the tumbler lock
+            three types of tumbler locks
+              Wafer tumbler locks
+                (also called disc tumbler locks)
+              Combination locks
+              Cipher locks,
+                programmable locks
+                functionalities
+                  • Door delay
+                  • Key override
+                  • Master keying
+                  • Hostage alarm
+          Device Locks
+            capabilities
+              • Switch controls
+              • Slot locks
+              • Port controls
+              • Peripheral switch controls
+              • Cable traps
+          Circumventing Locks
+        Lock Strengths
+          • Grade 1 Commercial and industrial use
+          • Grade 2 Heavy-duty residential/light-duty commercial
+          • Grade 3 Residential/consumer
+    Personnel Access Controls
+      Electronic access control (EAC) tokens
+      piggybacking
+      Identification and authentication can be verified by matching an anatomical attribute (biometric system), using smart or memory cards (swipe cards), presenting a photo ID to a security guard, using a key, or providing a card and entering a password or PIN
+    External Boundary Protection Mechanisms
+      control types
+        • Access control mechanisms Locks and keys, an electronic card access system, personnel awareness
+        • Physical barriers Fences, gates, walls, doors, windows, protected vents, vehicular barriers
+        • Intrusion detection Perimeter sensors, interior sensors, annunciation mechanisms
+        • Assessment Guards, CCTV cameras
+        • Response Guards, local law enforcement agencies
+        • Deterrents Signs, lighting, environmental design
+      Fencing
+        • Fences three to four feet high only deter casual trespassers.
+        • Fences six to seven feet high are considered too high to climb easily.
+        • Fences eight feet high (possibly with strands of barbed or razor wire at the top) means you are serious about protecting your property. They often deter the more determined intruder.
+      Bollards
+      Lighting
+      Surveillance Devices
+      Visual Recording Devices
+        closed-circuit TV (CCTV)
+          • The purpose of CCTV To detect, assess, and/or identify intruders
+          • The type of environment the CCTV camera will work in Internal or external areas
+          • The field of view required Large or small area to be monitored
+          • Amount of illumination of the environment Lit areas, unlit areas, areas affected by sunlight
+          • Integration with other security controls Guards, IDSs, alarm systems
+        charged-coupled devices (CCDs)
+        Two main types of lenses
+          fixed focal length
+          zoom (varifocal).
+        depth of field
+    Intrusion Detection Systems
+      IDSs can be used to detect changes
+        • Beams of light
+        • Sounds and vibrations
+        • Different types of fields (microwave, ultrasonic, electrostatic)
+        • Electrical circuit
+        • Motion
+      Electromechanical systems
+      A photoelectric system
+        photometric system
+      passive infrared (PIR) system
+      acoustical detection system
+      Wave-pattern motion detectors
+      proximity detector, or capacitance detector
+    Patrol Force and Guards
+    Dogs
+    Auditing Physical Access
+    Internal Security Controls
+  Secure Resource Provisioning
+    Asset Inventory
+      Tracking Hardware
+      Tracking Software
+        best practices
+          • Application whitelisting
+          • Using Gold Masters
+          • Enforcing the principle of least privilege
+          • Automated scanning
+    Asset Management
+      Media Management
+        Hardware
+        Software
+    Configuration Management
+      Change Control Process
+        change control policy
+          • Request for a change to take place
+          • Approval of the change
+          • Documentation of the change
+          • Tested and presented
+          • Implementation
+          • Report change to management
+    Trusted Recovery
+      type of failure
+        • System reboot
+        • Emergency system restart
+        • System cold start
+      After a System Crash
+        1. Enter into single user or safe mode.
+        2. Fix issue and recover files.
+        3. Validate critical files and operations. 
+      Security Concerns
+        • Protect the bootup sequence (C:, A:, D:)
+        • Do not allow bypassing of writing actions to system logs
+        • Do not allow system forced shutdowns
+        • Do not allow outputs to be rerouted
+    Input and Output Controls
+    System Hardening
+      Gold Master (GM)
+      Locked-down systems are referred to as bastion hosts.
+    Remote Access Security
+    Provisioning Cloud Assets
+  Network and Resource Availability
+    keeping that information available
+      • Redundant hardware
+      • Fault-tolerant technologies
+      • Service level agreements (SLAs)
+      • Solid operational procedures
+    Mean Time Between Failures
+      (MTBF)
+        is a measure of how long we expect a piece of equipment to operate reliably
+        implies that the device or component is repairable
+      mean time to failure (MTTF)
+    Mean time to repair (MTTR)
+      is the expected amount of time it will take to get a device fixed and back into production after its failure
+    Single Points of Failure
+      Redundant array of independent disks (RAID)
+      Direct access storage device (DASD)
+      massive array of inactive disks (MAID).
+      Redundant Array of Independent Tapes
+        Redundant array of independent tapes (RAIT)
+      storage area network (SAN)
+      Clustering
+      Grid Computing
+    Backups
+      Hierarchical storage management (HSM)
+    Contingency Planning
+    Summary of Technologies That Improve Resource Availability
+      • Redundant servers
+      • RAID, MAID, RAIT
+      • Direct access storage device
+      • Storage area networks
+      • Clustering
+      • Grid computing
+      • Backups
+  Preventing and Detecting
+    The steps of this generalized process
+      1. Understand the risk.
+      2. Use the right controls.
+      3. Use the controls correctly.
+      4. Manage your configuration.
+      5. Assess your operation.
+    Continuous Monitoring
+      NIST Special Publication 800-137, “Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations,” defines information security continuous monitoring as “maintaining ongoing awareness of information security, vulnerabilities, and threats to support organizational risk management decisions.”
+    Firewalls
+    Intrusion Detection and Prevention Systems
+    Whitelisting and Blacklisting
+    Antimalware
+    Vulnerability Management
+      Software Vulnerabilities
+        Scanning
+          1. Prepare
+          2. Scan
+          3. Remediate
+          4. Document
+      Process Vulnerabilities
+      Human Vulnerabilities
+        social engineering assessment
+          1. Open-source intelligence (OSINT) collection
+          2. Assessment planning
+          3. Assessment execution
+    Patch Management
+      Unmanaged Patching
+        • Credentials
+        • Configuration management
+        • Bandwidth utilization
+        • Service availability
+      Centralized Patch Management
+        • Agent based
+        • Agentless
+        • Passive
+    Sandboxing
+    Honeypots and Honeynets
+    Egress Monitoring
+    security information and event management (SIEM)
+    Outsourced Services
+      managed security services providers (MSSPs)
+        • Requirements
+        • Understanding
+        • Reputation
+        • Costing
+        • Liability
+  The Incident Management Process
+    incident response team
+      • A list of outside agencies and resources to contact or report to.
+      • An outline of roles and responsibilities.
+      • A call tree to contact these roles and outside entities.
+      • A list of computer or forensic experts to contact.
+      • A list of steps to take to secure and preserve evidence.
+      • A list of items that should be included in a report for management and potentially the courts.
+      • A description of how the different systems should be treated in this type of situation.
+    Computer Emergency Response Team (CERT)
+    The Cyber Kill Chain
+      1. Reconnaissance
+      2. Weaponization
+      3. Delivery
+      4. Exploitation
+      5. Installation
+      6. Command and Control (C&C)
+      7. Actions on the Objective
+    Detection
+    Response
+    Mitigation
+    Reporting
+      • Summary of the incident
+      • Indicators
+      • Related incidents
+      • Actions taken
+      • Chain of custody for all evidence (if applicable)
+      • Impact assessment
+      • Identity and comments of incident handlers
+      • Next steps to be taken
+    Recovery
+    Remediation
+  Investigations
+    Computer Forensics and Proper Collection of Evidence
+      Scientific Working Group on Digital Evidence (SWGDE)
+        attributes
+          • Consistency with all legal systems
+          • Allowance for the use of a common language
+          • Durability
+          • Ability to cross international and state boundaries
+          • Ability to instill confidence in the integrity of evidence
+          • Applicability to all forensic evidence
+          • Applicability at every level, including that of individual, agency, and country
+        principles
+          1. When dealing with digital evidence, all of the general forensic and procedural principles must be applied.
+          2. Upon the seizing of digital evidence, actions taken should not change that evidence.
+          3. When it is necessary for a person to access original digital evidence, that person should be trained for the purpose.
+          4. All activity relating to the seizure, access, storage, or transfer of digital evidence must be fully documented, preserved, and available for review.
+          5. An individual is responsible for all actions taken with respect to digital evidence while the digital evidence is in their possession.
+          6. Any agency that is responsible for seizing, accessing, storing, or transferring digital evidence is responsible for compliance with these principles.
+    Motive, Opportunity, and Means
+    Computer Criminal Behavior
+    Incident Investigators
+    Different Types of Assessments an Investigator Can Perform
+      Network analysis
+        • Traffic analysis
+        • Log analysis
+        • Path tracing
+      Media analysis
+        • Disk imaging
+        • Timeline analysis (modify, access, create times)
+        • Registry analysis
+        • Slack space analysis
+        • Shadow volume analysis
+      Software analysis
+        • Reverse engineering
+        • Malicious code review
+        • Exploit review
+      Hardware/embedded device analysis
+        • Dedicated appliance attack points
+        • Firmware and dedicated memory inspections
+        • Embedded operating systems, virtualized software, and hypervisor analysis
+    Types of Investigations
+      Administrative
+      Criminal
+      Civil
+      Regulatory
+    The Forensic Investigation Process
+      • Identification
+      • Preservation
+      • Collection
+      • Examination
+      • Analysis
+      • Presentation
+      • Decision
+    Forensics Field Kits
+      • Documentation tools Tags, labels, and time-lined forms
+      • Disassembly and removal tools Antistatic bands, pliers, tweezers, screwdrivers, wire cutters, and so on
+      • Package and transport supplies Antistatic bags, evidence bags and tape, cable ties, and others
+    Surveillance, Search, and Seizure
+      Surveillance
+        Physical surveillance
+        Computer surveillance
+  Disaster Recovery
+    Concept
+      maximum tolerable downtime (MTD)
+      recovery time objective (RTO)
+      work recovery time (WRT)
+    Relation
+    Business Process Recovery
+      • Required roles
+      • Required resources
+      • Input and output mechanisms
+      • Workflow steps
+      • Required time for completion
+      • Interfaces with other processes
+    Recovery Site Strategies
+      • Hot site
+      • Warm site
+      • Cold site
+      Reciprocal Agreements
+      Redundant Sites
+    Supply and Technology Recovery
+      Hardware Backups
+      Software Backups
+    Backup Storage Strategies
+      Online backup
+        full backup
+        differential process backs
+        incremental process backs up
+      Electronic Backup Solutions
+        Disk shadowing
+        Electronic vaulting
+          takes place in batches and moves the entire file that has been updated.
+        remote journaling
+          takes place in real time and transmits only the file deltas
+      Choosing a Software Backup Facility
+      Documentation
+      Human Resources
+    End-User Environment
+      Availability
+        High availability (HA)
+        technology terms
+          • Facility (cold, warm, hot, redundant, rolling, reciprocal sites)
+          • Infrastructure (redundancy, fault tolerance)
+          • Storage (RAID, SAN, mirroring, disk shadowing, cloud)
+          • Server (clustering, load balancing)
+          • Data (tapes, backups, vaulting, online replication)
+          • Business processes
+          • People
+  Liability and Its Ramifications
+    Liability
+      Due Care
+      Due Diligence
+    Liability Scenarios
+      Personal Information
+      Hacker Intrusion
+    Third-Party Risk
+    Contractual Agreements
+      • Outsourcing agreements
+      • Hardware supply
+      • System maintenance and support
+      • System leasing agreements
+      • Consultancy service agreements
+      • Website development and support
+      • Nondisclosure and confidentiality agreements
+      • Information security management agreements
+      • Software development agreements
+      • Software licensing
+    Procurement and Vendor Processes
+      vendor management governing process
+      Request for Proposals (RFP)
+  Insurance
+    Cyber insurance
+    business interruption insurance
+  Implementing Disaster Recovery
+    a goal must contain certain key information
+      • Responsibility
+      • Authority
+      • Priorities
+      • Implementation and testing
+    Personnel
+      • Damage assessment team
+      • Recovery team
+      • Relocation team
+      • Restoration team
+      • Salvage team
+      • Security team
+    Assessment
+      procedures
+        • Determine the cause of the disaster.
+        • Determine the potential for further damage.
+        • Identify the affected business functions and areas.
+        • Identify the level of functionality for the critical resources.
+        • Identify the resources that must be replaced immediately.
+        • Estimate how long it will take to bring critical functions back online.
+        • If it will take longer than the previously estimated MTD values to restore operations, then a disaster should be declared and the BCP should be put into action.
+      criteria
+        • Danger to human life
+        • Danger to state or national security
+        • Damage to facility
+        • Damage to critical systems
+        • Estimated value of downtime that will be experienced
+    Restoration
+      to the alternate site
+        • Ensuring the safety of employees
+        • Ensuring an adequate environment is provided (power, facility infrastructure, water, HVAC)
+        • Ensuring that the necessary equipment and supplies are present and in working order
+        • Ensuring proper communications and connectivity methods are working
+        • Properly testing the new environment
+      salvage team
+        • Back up data from the alternate site and restore it within the new facility.
+        • Carefully terminate contingency operations.
+        • Securely transport equipment and personnel to the new facility.
+    Communications
+      emergency communications plan
+        Primary, Alternate, Contingency, and Emergency (PACE) communications plans
+    Training
+  Personal Safety Concerns
+    Emergency Management
+      OEP
+        occupant emergency plan (OEP)
+      fail-safe device
+      Duress
+      Travel
+        best practices
+          Ask for a room on the second floor.
+          • Ask for and keep a hotel business card on your person at all times in case you have to call the local police or embassy and provide your location in an emergency.
+          • Secure valuables in the in-room safe.
+          • Always use the security latch on the door when in the room.
+          • Keep your passport with you at all times when in a foreign country.
+      Training
+Domain 8. Do it yourself
+
