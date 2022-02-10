@@ -5,6 +5,8 @@ CISSP mind map, 8 domains, 2020 edition, OSG/AIO eighth edition, 8th
 
 ps. Local browser version downloaded in release
 
+[Plaintext here](All-Domains-Tree-View.txt)
+
 ## View
 
 - domain01. Security and Risk Management (Detail - Show 2 levels)
